@@ -643,12 +643,6 @@ namespace ArrestedDevelopmentApi.Migrations
                         },
                         new
                         {
-                            QuoteId = 102,
-                            Speaker = "GOB",
-                            Text = "Don't call my escorts whores"
-                        },
-                        new
-                        {
                             QuoteId = 103,
                             Speaker = "Michael",
                             Text = "He's definitely got a type"
@@ -766,12 +760,6 @@ namespace ArrestedDevelopmentApi.Migrations
                             QuoteId = 122,
                             Speaker = "GOB",
                             Text = "Are those police boats?"
-                        },
-                        new
-                        {
-                            QuoteId = 123,
-                            Speaker = "GOB",
-                            Text = "A trick is something a whore does for money"
                         },
                         new
                         {
@@ -922,18 +910,6 @@ namespace ArrestedDevelopmentApi.Migrations
                             QuoteId = 148,
                             Speaker = "Buster",
                             Text = "My Army training tells me that this is going to be a hot mission"
-                        },
-                        new
-                        {
-                            QuoteId = 149,
-                            Speaker = "GOB",
-                            Text = "I don't date whores"
-                        },
-                        new
-                        {
-                            QuoteId = 150,
-                            Speaker = "GOB",
-                            Text = "It's just mom and whores"
                         },
                         new
                         {
@@ -2480,7 +2456,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         new
                         {
                             QuoteId = 408,
-                            Speaker = "Unknown",
+                            Speaker = "GOB",
                             Text = "I think the plant lady's wearing a thong"
                         },
                         new
@@ -2492,7 +2468,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         new
                         {
                             QuoteId = 410,
-                            Speaker = "Unknown",
+                            Speaker = "Lucille",
                             Text = "Go see a Star War"
                         },
                         new
@@ -2546,7 +2522,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         new
                         {
                             QuoteId = 419,
-                            Speaker = "Unknown",
+                            Speaker = "Lucille",
                             Text = "No one would believe that a woman like me would have a gay son"
                         },
                         new
@@ -2564,7 +2540,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         new
                         {
                             QuoteId = 422,
-                            Speaker = "Unknown",
+                            Speaker = "GOB",
                             Text = "How do we filter out the teases? We don't let them in."
                         },
                         new
@@ -2600,7 +2576,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         new
                         {
                             QuoteId = 428,
-                            Speaker = "Unknown",
+                            Speaker = "GeorgeMichael",
                             Text = "Guess she didn't see the drawings"
                         },
                         new
@@ -2612,7 +2588,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         new
                         {
                             QuoteId = 430,
-                            Speaker = "Unknown",
+                            Speaker = "Tobias",
                             Text = "I need to prove to her that I'm not just a man, but a man's man"
                         },
                         new
@@ -2636,67 +2612,67 @@ namespace ArrestedDevelopmentApi.Migrations
                         new
                         {
                             QuoteId = 434,
-                            Speaker = "Unknown",
+                            Speaker = "GeorgeSenior",
                             Text = "I tried to drink some of the water, and it was too hot and it tasted like soy sauce"
                         },
                         new
                         {
                             QuoteId = 435,
-                            Speaker = "Unknown",
+                            Speaker = "GeorgeSenior",
                             Text = "I think the teriyaki chicken burst"
                         },
                         new
                         {
                             QuoteId = 436,
-                            Speaker = "Unknown",
+                            Speaker = "GeorgeSenior",
                             Text = "This isn't turning into the party hangout I hoped"
                         },
                         new
                         {
                             QuoteId = 437,
-                            Speaker = "Unknown",
+                            Speaker = "Lindsay",
                             Text = "Stick a wrench in me, I'm done"
                         },
                         new
                         {
                             QuoteId = 438,
-                            Speaker = "Unknown",
+                            Speaker = "UncleJack",
                             Text = "Someone order 140 pounds of upper-body strength?"
                         },
                         new
                         {
                             QuoteId = 439,
-                            Speaker = "Unknown",
+                            Speaker = "UncleJack",
                             Text = "It's just something the body does when you shake it"
                         },
                         new
                         {
                             QuoteId = 440,
-                            Speaker = "Unknown",
+                            Speaker = "Maeby",
                             Text = "Well, I'm all grown up now"
                         },
                         new
                         {
                             QuoteId = 441,
-                            Speaker = "Unknown",
+                            Speaker = "UncleJack",
                             Text = "How'd you like to take a nap, baldy?"
                         },
                         new
                         {
                             QuoteId = 442,
-                            Speaker = "Unknown",
+                            Speaker = "Michael",
                             Text = "Let's not spin in the comfy chair"
                         },
                         new
                         {
                             QuoteId = 443,
-                            Speaker = "Unknown",
+                            Speaker = "Barry",
                             Text = "I got Michael out of his marriage, didn't I?"
                         },
                         new
                         {
                             QuoteId = 444,
-                            Speaker = "Unknown",
+                            Speaker = "Barry",
                             Text = "I need macaroons"
                         },
                         new
@@ -2720,19 +2696,19 @@ namespace ArrestedDevelopmentApi.Migrations
                         new
                         {
                             QuoteId = 448,
-                            Speaker = "Unknown",
+                            Speaker = "Buster",
                             Text = "I was made to understand that there would be grilled cheese sandwiches here"
                         },
                         new
                         {
                             QuoteId = 449,
-                            Speaker = "Unknown",
+                            Speaker = "Buster",
                             Text = "Will someone please have the decency to punch me in the face?"
                         },
                         new
                         {
                             QuoteId = 450,
-                            Speaker = "Unknown",
+                            Speaker = "Buster",
                             Text = "Mom always taught us to curl up in a ball and remain motionless when confronted"
                         },
                         new
@@ -2740,12 +2716,6 @@ namespace ArrestedDevelopmentApi.Migrations
                             QuoteId = 451,
                             Speaker = "Buster",
                             Text = "We have unlimited juice?"
-                        },
-                        new
-                        {
-                            QuoteId = 452,
-                            Speaker = "Buster",
-                            Text = "You old horny slut"
                         },
                         new
                         {
