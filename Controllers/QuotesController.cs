@@ -31,8 +31,7 @@ namespace ArrestedDevelopmentApi.Controllers
       }
       if (maxWords != 0)
       {  
-        
-
+        query = query.Where(entry => entry.NumberOfWords <= maxWords);
       }
 
       return await query.ToListAsync();
@@ -56,6 +55,7 @@ namespace ArrestedDevelopmentApi.Controllers
     [HttpPost]
     public async Task<ActionResult<Quote>> Post(Quote quote)
     {
+      quote.NumberOfWords = quote.Text.Split(" ").Count();
       _db.Quotes.Add(quote);
       await _db.SaveChangesAsync();
       return CreatedAtAction(nameof(GetQuote), new { id = quote.QuoteId }, quote);

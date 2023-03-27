@@ -77,9 +77,9 @@ GET http://localhost:5000/api/quotes/
 * _Returns all quotes in the database_
 
 Postman Example:  
-Start a new GET request in Postman and enter the above URL. Click Send. You should see a JSON response with all animals in the database.  
+Start a new GET request in Postman and enter the above URL. Click Send. You should see a JSON response with all quotes in the database.  
 
-Example Return Respose:
+Example Return Response:
 ```
 [
   {
