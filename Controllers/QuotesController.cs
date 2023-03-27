@@ -16,26 +16,59 @@ namespace ArrestedDevelopmentApi.Controllers
     }
 
     // GET api/quotes
+    // [HttpGet]
+    // public async Task<ActionResult<IEnumerable<Quote>>> Get(string speaker, int maxWords, bool question = false)
+    // {
+    //   IQueryable<Quote> query = _db.Quotes.AsQueryable();
+
+    //   if (speaker != null)
+    //   {
+    //     query = query.Where(entry => entry.Speaker == speaker);
+    //   }
+    //   if (question)
+    //   {  
+    //     query = query.Where(entry => entry.Text.EndsWith("?"));
+    //   }
+    //   if (maxWords != 0)
+    //   {  
+    //     query = query.Where(entry => entry.NumberOfWords <= maxWords);
+    //   }
+
+    //   return await query.ToListAsync();
+    // }
+
+    // Chat GPT $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Quote>>> Get(string speaker, int maxWords, bool question = false)
+    public IActionResult GetQuotes(int page = 1, int pageSize = 10)
     {
-      IQueryable<Quote> query = _db.Quotes.AsQueryable();
+        // Calculate the number of items to skip based on the page size and requested page.
+        int skip = (page - 1) * pageSize;
 
-      if (speaker != null)
-      {
-        query = query.Where(entry => entry.Speaker == speaker);
-      }
-      if (question)
-      {  
-        query = query.Where(entry => entry.Text.EndsWith("?"));
-      }
-      if (maxWords != 0)
-      {  
-        query = query.Where(entry => entry.NumberOfWords <= maxWords);
-      }
+        // Retrieve the data from your data source, applying the pagination parameters.
+        List<Quote> quotes = _db.Quotes
+            .OrderBy(q => q.QuoteId)
+            .Skip(skip)
+            .Take(pageSize)
+            .ToList();
 
-      return await query.ToListAsync();
+        // Determine the total number of items in your data source.
+        int totalCount = _db.Quotes.Count();
+
+        // Create a response object to hold the paginated data and total count.
+        var response = new
+        {
+            Data = quotes,
+            TotalCount = totalCount,
+            Page = page,
+            PageSize = pageSize
+        };
+
+        // Return the paginated data to the client.
+        return Ok(response);
     }
+
+    // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
     // GET: api/quotes/5
     [HttpGet("{id}")]
@@ -50,7 +83,7 @@ namespace ArrestedDevelopmentApi.Controllers
 
       return Quote;
     }
-
+    
     // POST api/quotes
     [HttpPost]
     public async Task<ActionResult<Quote>> Post(Quote quote)
