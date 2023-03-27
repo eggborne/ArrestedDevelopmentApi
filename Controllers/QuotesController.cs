@@ -17,7 +17,7 @@ namespace ArrestedDevelopmentApi.Controllers
 
     // GET api/quotes
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Quote>>> Get(string speaker, bool question = false)
+    public async Task<ActionResult<IEnumerable<Quote>>> Get(string speaker, int maxWords, bool question = false)
     {
       IQueryable<Quote> query = _db.Quotes.AsQueryable();
 
@@ -28,6 +28,11 @@ namespace ArrestedDevelopmentApi.Controllers
       if (question)
       {  
         query = query.Where(entry => entry.Text.EndsWith("?"));
+      }
+      if (maxWords != 0)
+      {  
+        
+
       }
 
       return await query.ToListAsync();
@@ -86,6 +91,21 @@ namespace ArrestedDevelopmentApi.Controllers
       return NoContent();
     }
 
+    // DELETE: api/Quotes/5
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteQuote(int id)
+    {
+      Quote Quote = await _db.Quotes.FindAsync(id);
+      if (Quote == null)
+      {
+        return NotFound();
+      }
+
+      _db.Quotes.Remove(Quote);
+      await _db.SaveChangesAsync();
+
+      return NoContent();
+    }
     private bool QuoteExists(int id)
     {
       return _db.Quotes.Any(e => e.QuoteId == id);
