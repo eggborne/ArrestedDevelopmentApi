@@ -17,13 +17,17 @@ namespace ArrestedDevelopmentApi.Controllers
 
     // GET api/quotes
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Quote>>> Get(string speaker)
+    public async Task<ActionResult<IEnumerable<Quote>>> Get(string speaker, bool question = false)
     {
       IQueryable<Quote> query = _db.Quotes.AsQueryable();
 
       if (speaker != null)
       {
         query = query.Where(entry => entry.Speaker == speaker);
+      }
+      if (question)
+      {  
+        query = query.Where(entry => entry.Text.EndsWith("?"));
       }
 
       return await query.ToListAsync();
