@@ -37,8 +37,8 @@ namespace ArrestedDevelopmentApi.Controllers
     //   return await query.ToListAsync();
     // }
 
-    // Chat GPT $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
+    // GET: api/quotes?page=1&pagesize=20
     [HttpGet]
     public IActionResult GetQuotes(int page = 1, int pageSize = 10)
     {
@@ -67,8 +67,6 @@ namespace ArrestedDevelopmentApi.Controllers
         // Return the paginated data to the client.
         return Ok(response);
     }
-
-    // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
     // GET: api/quotes/5
     [HttpGet("{id}")]

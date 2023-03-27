@@ -180,9 +180,9 @@ https://localhost:5001/api/quotes?question=true
 }
 ```
 
-## Versions
-* _Version 1: Stable version working version with no bugs._ 
-* _Version 2: A non stable work in progress version that will add additional search query parameters and the logic to handle them_
+## Pagination
+* _Paging refers to getting partial results from an API._ 
+* _Change the pagesize to your desired number in the URL: https://localhost:5001/api/quotes?page=1&pagesize=10_
 
 ## Known Bugs
 
