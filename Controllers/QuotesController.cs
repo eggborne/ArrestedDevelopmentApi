@@ -16,8 +16,31 @@ namespace ArrestedDevelopmentApi.Controllers
     }
 
     // GET api/quotes
+    // [HttpGet]
+    // public async Task<ActionResult<IEnumerable<Quote>>> Get(string speaker, int maxWords, bool question = false)
+    // {
+    //   IQueryable<Quote> query = _db.Quotes.AsQueryable();
+
+    //   if (speaker != null)
+    //   {
+    //     query = query.Where(entry => entry.Speaker == speaker);
+    //   }
+    //   if (question)
+    //   {  
+    //     query = query.Where(entry => entry.Text.EndsWith("?"));
+    //   }
+    //   if (maxWords != 0)
+    //   {  
+    //     query = query.Where(entry => entry.NumberOfWords <= maxWords);
+    //   }
+
+    //   return await query.ToListAsync();
+    // }
+
+
+    // GET: api/quotes?page=1&pagesize=20
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Quote>>> Get(string speaker, bool question = false)
+    public async Task<IActionResult> GetQuotes( int maxWords, string speaker, bool question = false, int page = 1, int pageSize = 10)
     {
       IQueryable<Quote> query = _db.Quotes.AsQueryable();
 
@@ -29,8 +52,33 @@ namespace ArrestedDevelopmentApi.Controllers
       {  
         query = query.Where(entry => entry.Text.EndsWith("?"));
       }
+      if (maxWords != 0)
+      {  
+        query = query.Where(entry => entry.NumberOfWords <= maxWords);
+      }
+        // Calculate the number of items to skip based on the page size and requested page.
+        int skip = (page - 1) * pageSize;
 
-      return await query.ToListAsync();
+        // Retrieve the data from your data source, applying the pagination parameters.
+        List<Quote> quotes = await query
+            .Skip(skip)
+            .Take(pageSize)
+            .ToListAsync();
+
+        // Determine the total number of items in your data source.
+        int totalCount = _db.Quotes.Count();
+
+        // Create a response object to hold the paginated data and total count.
+        var response = new
+        {
+            Data = quotes,
+            TotalCount = totalCount,
+            Page = page,
+            PageSize = pageSize
+        };
+
+        // Return the paginated data to the client.
+        return Ok(response);
     }
 
     // GET: api/quotes/5
@@ -46,11 +94,12 @@ namespace ArrestedDevelopmentApi.Controllers
 
       return Quote;
     }
-
+    
     // POST api/quotes
     [HttpPost]
     public async Task<ActionResult<Quote>> Post(Quote quote)
     {
+      quote.NumberOfWords = quote.Text.Split(" ").Count();
       _db.Quotes.Add(quote);
       await _db.SaveChangesAsync();
       return CreatedAtAction(nameof(GetQuote), new { id = quote.QuoteId }, quote);
@@ -86,6 +135,21 @@ namespace ArrestedDevelopmentApi.Controllers
       return NoContent();
     }
 
+    // DELETE: api/Quotes/5
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteQuote(int id)
+    {
+      Quote Quote = await _db.Quotes.FindAsync(id);
+      if (Quote == null)
+      {
+        return NotFound();
+      }
+
+      _db.Quotes.Remove(Quote);
+      await _db.SaveChangesAsync();
+
+      return NoContent();
+    }
     private bool QuoteExists(int id)
     {
       return _db.Quotes.Any(e => e.QuoteId == id);

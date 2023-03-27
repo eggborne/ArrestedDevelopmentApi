@@ -2,6 +2,7 @@
 using ArrestedDevelopmentApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ArrestedDevelopmentApi.Migrations
 {
     [DbContext(typeof(ArrestedDevelopmentApiContext))]
-    partial class ArrestedDevelopmentApiContextModelSnapshot : ModelSnapshot
+    [Migration("20230327210236_AddMaxWords")]
+    partial class AddMaxWords
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,9 +24,6 @@ namespace ArrestedDevelopmentApi.Migrations
                 {
                     b.Property<int>("QuoteId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<int>("NumberOfWords")
                         .HasColumnType("int");
 
                     b.Property<string>("Speaker")
@@ -41,3334 +40,2900 @@ namespace ArrestedDevelopmentApi.Migrations
                         new
                         {
                             QuoteId = 1,
-                            NumberOfWords = 4,
-                            Speaker = "GOB",
-                            Text = "Hair up, glasses off"
-                        },
-                        new
-                        {
-                            QuoteId = 2,
-                            NumberOfWords = 7,
                             Speaker = "Unknown",
                             Text = "You boys know how to shovel coal?"
                         },
                         new
                         {
-                            QuoteId = 3,
-                            NumberOfWords = 8,
+                            QuoteId = 2,
                             Speaker = "Buster",
                             Text = "What do you expect, Mother? I'm half machine!"
                         },
                         new
                         {
-                            QuoteId = 4,
-                            NumberOfWords = 3,
+                            QuoteId = 3,
                             Speaker = "Buster",
                             Text = "I'm a monster!"
                         },
                         new
                         {
-                            QuoteId = 5,
-                            NumberOfWords = 10,
+                            QuoteId = 4,
                             Speaker = "Unknown",
                             Text = "It's a good thing he's already got that little scooter"
                         },
                         new
                         {
-                            QuoteId = 6,
-                            NumberOfWords = 8,
+                            QuoteId = 5,
                             Speaker = "Unknown",
                             Text = "A heart attack never stopped old Big Bear"
                         },
                         new
                         {
-                            QuoteId = 7,
-                            NumberOfWords = 10,
+                            QuoteId = 6,
                             Speaker = "Buster",
                             Text = "I didn't even know we were calling him Big Bear"
                         },
                         new
                         {
-                            QuoteId = 8,
-                            NumberOfWords = 9,
+                            QuoteId = 7,
                             Speaker = "Unknown",
                             Text = "You could charm the black off a telegram boy"
                         },
                         new
                         {
-                            QuoteId = 9,
-                            NumberOfWords = 6,
-                            Speaker = "GOB",
+                            QuoteId = 8,
+                            Speaker = "Unknown",
                             Text = "Did you see the new Poof?"
                         },
                         new
                         {
-                            QuoteId = 10,
-                            NumberOfWords = 7,
+                            QuoteId = 9,
                             Speaker = "Lucille",
                             Text = "I love all of my children equally"
                         },
                         new
                         {
-                            QuoteId = 11,
-                            NumberOfWords = 9,
-                            Speaker = "Lucille",
+                            QuoteId = 10,
+                            Speaker = "Unknown",
                             Text = "No one's called him Baby Buster since high school"
                         },
                         new
                         {
-                            QuoteId = 12,
-                            NumberOfWords = 10,
+                            QuoteId = 11,
                             Speaker = "Unknown",
                             Text = "They didn't sneak into this country to be your friends"
                         },
                         new
                         {
-                            QuoteId = 13,
-                            NumberOfWords = 9,
+                            QuoteId = 12,
                             Speaker = "Unknown",
                             Text = "You were just a turd out there, you know?"
                         },
                         new
                         {
-                            QuoteId = 14,
-                            NumberOfWords = 9,
+                            QuoteId = 13,
                             Speaker = "Buster",
                             Text = "This party is going to be off the hook"
                         },
                         new
                         {
-                            QuoteId = 15,
-                            NumberOfWords = 8,
+                            QuoteId = 14,
                             Speaker = "Unknown",
                             Text = "I hear the jury's still out on science"
                         },
                         new
                         {
-                            QuoteId = 16,
-                            NumberOfWords = 7,
+                            QuoteId = 15,
                             Speaker = "Buster",
                             Text = "Like anyone would want to \"R\" her"
                         },
                         new
                         {
-                            QuoteId = 17,
-                            NumberOfWords = 11,
+                            QuoteId = 16,
                             Speaker = "Buster",
                             Text = "Can't a guy call his mother pretty without it seeming strange?"
                         },
                         new
                         {
-                            QuoteId = 18,
-                            NumberOfWords = 10,
-                            Speaker = "Buster",
+                            QuoteId = 17,
+                            Speaker = "Unknown",
                             Text = "This is the best free scrapbooking class I've ever taken"
                         },
                         new
                         {
-                            QuoteId = 19,
-                            NumberOfWords = 5,
+                            QuoteId = 18,
                             Speaker = "Unknown",
                             Text = "Go ahead, touch the Cornballer"
                         },
                         new
                         {
-                            QuoteId = 20,
-                            NumberOfWords = 11,
+                            QuoteId = 19,
                             Speaker = "Buster",
                             Text = "I'm going to run this through again on \"pots and pans\""
                         },
                         new
                         {
-                            QuoteId = 21,
-                            NumberOfWords = 20,
-                            Speaker = "Unknown",
+                            QuoteId = 20,
+                            Speaker = "Tobias",
                             Text = "I've been in the film business for a while but I just can't seem to get one in the can"
                         },
                         new
                         {
-                            QuoteId = 22,
-                            NumberOfWords = 16,
+                            QuoteId = 21,
                             Speaker = "Tobias",
                             Text = "I will be a bigger and hairier mole than the one on your inner left thigh"
                         },
                         new
                         {
-                            QuoteId = 23,
-                            NumberOfWords = 15,
+                            QuoteId = 22,
                             Speaker = "Lucille",
                             Text = "I want to cry so bad, but I don't think I can spare the moisture"
                         },
                         new
                         {
-                            QuoteId = 24,
-                            NumberOfWords = 7,
+                            QuoteId = 23,
                             Speaker = "GeorgeMichael",
                             Text = "Maybe it was the other George Michael"
                         },
                         new
                         {
-                            QuoteId = 25,
-                            NumberOfWords = 11,
+                            QuoteId = 24,
                             Speaker = "Unknown",
                             Text = "I'm tired of trying to find happiness through lies and self-medicating"
                         },
                         new
                         {
-                            QuoteId = 26,
-                            NumberOfWords = 12,
-                            Speaker = "Buster",
+                            QuoteId = 25,
+                            Speaker = "Lindsay",
                             Text = "It's so watery, and yet there's a smack of ham to it"
                         },
                         new
                         {
-                            QuoteId = 27,
-                            NumberOfWords = 12,
+                            QuoteId = 26,
                             Speaker = "Buster",
                             Text = "The seal is for marksmanship, and the gorilla is for sand racing"
                         },
                         new
                         {
-                            QuoteId = 28,
-                            NumberOfWords = 13,
-                            Speaker = "Michael",
+                            QuoteId = 27,
+                            Speaker = "Unknown",
                             Text = "After all these years, God's not going to take a call from you"
                         },
                         new
                         {
-                            QuoteId = 29,
-                            NumberOfWords = 13,
+                            QuoteId = 28,
                             Speaker = "GOB",
                             Text = "You mean the guy we're meeting with can't even grow his own hair?"
                         },
                         new
                         {
-                            QuoteId = 30,
-                            NumberOfWords = 9,
+                            QuoteId = 29,
                             Speaker = "Tobias",
                             Text = "I thought the two of us could talk man-on-man"
                         },
                         new
                         {
-                            QuoteId = 31,
-                            NumberOfWords = 23,
+                            QuoteId = 30,
                             Speaker = "Tobias",
                             Text = "I spent so much time making sweet love on my wife that it's hard to hear anything over the clatter of her breasts"
                         },
                         new
                         {
-                            QuoteId = 32,
-                            NumberOfWords = 5,
+                            QuoteId = 31,
                             Speaker = "Unknown",
                             Text = "You've been warned about touching"
                         },
                         new
                         {
-                            QuoteId = 33,
-                            NumberOfWords = 2,
+                            QuoteId = 32,
                             Speaker = "Unknown",
                             Text = "No touching"
                         },
                         new
                         {
-                            QuoteId = 34,
-                            NumberOfWords = 6,
+                            QuoteId = 33,
                             Speaker = "Unknown",
                             Text = "I think I maced a crane"
                         },
                         new
                         {
-                            QuoteId = 35,
-                            NumberOfWords = 10,
+                            QuoteId = 34,
                             Speaker = "Lindsay",
                             Text = "Wine only turns to alcohol if you let it sit"
                         },
                         new
                         {
-                            QuoteId = 36,
-                            NumberOfWords = 11,
+                            QuoteId = 35,
                             Speaker = "Tobias",
                             Text = "I see you've wasted no time in filling my seat hole"
                         },
                         new
                         {
-                            QuoteId = 37,
-                            NumberOfWords = 15,
+                            QuoteId = 36,
                             Speaker = "GOB",
                             Text = "I'm going to buy you the single healthiest call girl this town has ever seen"
                         },
                         new
                         {
-                            QuoteId = 38,
-                            NumberOfWords = 4,
+                            QuoteId = 37,
                             Speaker = "GOB",
                             Text = "Turn this skiff around"
                         },
                         new
                         {
-                            QuoteId = 39,
-                            NumberOfWords = 9,
+                            QuoteId = 38,
                             Speaker = "Buster",
                             Text = "I never thought I'd miss a hand so much"
                         },
                         new
                         {
-                            QuoteId = 40,
-                            NumberOfWords = 12,
+                            QuoteId = 39,
                             Speaker = "Tobias",
                             Text = "I can just taste those meaty leading man parts in my mouth."
                         },
                         new
                         {
-                            QuoteId = 41,
-                            NumberOfWords = 8,
+                            QuoteId = 40,
                             Speaker = "Lucille",
                             Text = "Everyone's laughing and riding and cornholing except Buster"
                         },
                         new
                         {
-                            QuoteId = 42,
-                            NumberOfWords = 7,
+                            QuoteId = 41,
                             Speaker = "Unknown",
                             Text = "You can always tell a Milford man"
                         },
                         new
                         {
-                            QuoteId = 43,
-                            NumberOfWords = 15,
+                            QuoteId = 42,
                             Speaker = "Tobias",
                             Text = "Let me take off my assistant's skirt and put on my Barbra-Streisand-in-The-Prince-of-Tides ass-masking therapist pantsuit"
                         },
                         new
                         {
-                            QuoteId = 44,
-                            NumberOfWords = 9,
+                            QuoteId = 43,
                             Speaker = "Franklin",
                             Text = "I don't want no part of yo tight-ass country-club"
                         },
                         new
                         {
-                            QuoteId = 45,
-                            NumberOfWords = 6,
+                            QuoteId = 44,
                             Speaker = "Tobias",
                             Text = "Don't leave your Uncle T-Bag hanging"
                         },
                         new
                         {
-                            QuoteId = 46,
-                            NumberOfWords = 10,
+                            QuoteId = 45,
                             Speaker = "Michael",
                             Text = "What have we always said is the most important thing?"
                         },
                         new
                         {
-                            QuoteId = 47,
-                            NumberOfWords = 8,
+                            QuoteId = 46,
                             Speaker = "Buster",
                             Text = "We're just blowing through nap time, aren't we?"
                         },
                         new
                         {
-                            QuoteId = 48,
-                            NumberOfWords = 8,
-                            Speaker = "Franklin",
+                            QuoteId = 47,
+                            Speaker = "Unknown",
                             Text = "Let me give that oatmeal some brown sugar"
                         },
                         new
                         {
-                            QuoteId = 49,
-                            NumberOfWords = 12,
+                            QuoteId = 48,
                             Speaker = "Lucille",
                             Text = "A sea of waiters and no one will take a drink order"
                         },
                         new
                         {
-                            QuoteId = 50,
-                            NumberOfWords = 3,
+                            QuoteId = 49,
                             Speaker = "Barry",
                             Text = "Those are balls"
                         },
                         new
                         {
-                            QuoteId = 51,
-                            NumberOfWords = 11,
+                            QuoteId = 50,
                             Speaker = "Tobias",
                             Text = "I'm gonna build me an airport, put my name on it"
                         },
                         new
                         {
-                            QuoteId = 52,
-                            NumberOfWords = 5,
+                            QuoteId = 51,
                             Speaker = "Tobias",
                             Text = "Let me out that queen"
                         },
                         new
                         {
-                            QuoteId = 53,
-                            NumberOfWords = 6,
+                            QuoteId = 52,
                             Speaker = "Tobias",
                             Text = "Do these effectively hide my thunder?"
                         },
                         new
                         {
-                            QuoteId = 54,
-                            NumberOfWords = 21,
+                            QuoteId = 53,
                             Speaker = "Buster",
                             Text = "You just grab that brownish area by its points and you don't let go no matter what your mother tells you"
                         },
                         new
                         {
-                            QuoteId = 55,
-                            NumberOfWords = 7,
+                            QuoteId = 54,
                             Speaker = "Tobias",
                             Text = "I guess you can say I'm buy-curious"
                         },
                         new
                         {
-                            QuoteId = 56,
-                            NumberOfWords = 7,
+                            QuoteId = 55,
                             Speaker = "Unknown",
                             Text = "The soup of the day is bread"
                         },
                         new
                         {
-                            QuoteId = 57,
-                            NumberOfWords = 20,
+                            QuoteId = 56,
                             Speaker = "GeorgeMichael",
                             Text = "I could use a leather jacket for when I'm on my hog and have to go into a controlled slide"
                         },
                         new
                         {
-                            QuoteId = 58,
-                            NumberOfWords = 8,
+                            QuoteId = 57,
                             Speaker = "Buster",
                             Text = "Are you at all concerned about an uprising?"
                         },
                         new
                         {
-                            QuoteId = 59,
-                            NumberOfWords = 8,
+                            QuoteId = 58,
                             Speaker = "Tobias",
                             Text = "In the dark, it all looks the same"
                         },
                         new
                         {
-                            QuoteId = 60,
-                            NumberOfWords = 15,
+                            QuoteId = 59,
                             Speaker = "Tobias",
                             Text = "Look at us, crying like a bunch of girls on the last day of camp"
                         },
                         new
                         {
-                            QuoteId = 61,
-                            NumberOfWords = 12,
-                            Speaker = "GeorgeSenior",
+                            QuoteId = 60,
+                            Speaker = "Unknown",
                             Text = "You just made a fool out of yourself in front of T-Bone"
                         },
                         new
                         {
-                            QuoteId = 62,
-                            NumberOfWords = 11,
+                            QuoteId = 61,
                             Speaker = "GOB",
                             Text = "I hope you also carry a spare bowl of candy beans"
                         },
                         new
                         {
-                            QuoteId = 63,
-                            NumberOfWords = 9,
-                            Speaker = "Michael",
+                            QuoteId = 62,
+                            Speaker = "Unknown",
                             Text = "You can't just comb that out and reset it?"
                         },
                         new
                         {
-                            QuoteId = 64,
-                            NumberOfWords = 8,
+                            QuoteId = 63,
                             Speaker = "Lucille",
                             Text = "Look what the homosexuals have done to me"
                         },
                         new
                         {
-                            QuoteId = 65,
-                            NumberOfWords = 18,
+                            QuoteId = 64,
                             Speaker = "Lucille",
                             Text = "Everything they do is so dramatic and flamboyant, it just makes me want to set myself on fire"
                         },
                         new
                         {
-                            QuoteId = 66,
-                            NumberOfWords = 7,
+                            QuoteId = 65,
                             Speaker = "GeorgeSenior",
                             Text = "I may have committed some light treason"
                         },
                         new
                         {
-                            QuoteId = 67,
-                            NumberOfWords = 11,
+                            QuoteId = 66,
                             Speaker = "Lucille",
                             Text = "I don't understand the question and I won't respond to it"
                         },
                         new
                         {
-                            QuoteId = 68,
-                            NumberOfWords = 7,
+                            QuoteId = 67,
                             Speaker = "GeorgeSenior",
                             Text = "There's always money in the banana stand"
                         },
                         new
                         {
-                            QuoteId = 69,
-                            NumberOfWords = 20,
+                            QuoteId = 68,
                             Speaker = "Tobias",
                             Text = "In this business of show, you have to have the heart of an angel and the hyde of an elephant"
                         },
                         new
                         {
-                            QuoteId = 70,
-                            NumberOfWords = 18,
+                            QuoteId = 69,
                             Speaker = "GeorgeSenior",
                             Text = "Too many lives have been ruined because some cheap waitress at a HoJo said she used an I.U.D."
                         },
                         new
                         {
-                            QuoteId = 71,
-                            NumberOfWords = 12,
+                            QuoteId = 70,
                             Speaker = "Buster",
                             Text = "Do you think I could have a hit of that juice box?"
                         },
                         new
                         {
-                            QuoteId = 72,
-                            NumberOfWords = 12,
-                            Speaker = "Lucille",
+                            QuoteId = 71,
+                            Speaker = "Buster",
                             Text = "Suddenly he's too much of a big shot to brush Mother's hair"
                         },
                         new
                         {
-                            QuoteId = 73,
-                            NumberOfWords = 5,
+                            QuoteId = 72,
                             Speaker = "Buster",
                             Text = "It walked on my pillow"
                         },
                         new
                         {
-                            QuoteId = 74,
-                            NumberOfWords = 4,
+                            QuoteId = 73,
                             Speaker = "Michael",
                             Text = "That's not a spinner"
                         },
                         new
                         {
-                            QuoteId = 75,
-                            NumberOfWords = 9,
+                            QuoteId = 74,
                             Speaker = "Buster",
                             Text = "I thought I saw a graham cracker out there"
                         },
                         new
                         {
-                            QuoteId = 76,
-                            NumberOfWords = 8,
+                            QuoteId = 75,
                             Speaker = "CarlWeathers",
                             Text = "There's still plenty of meat on that bone"
                         },
                         new
                         {
-                            QuoteId = 77,
-                            NumberOfWords = 15,
+                            QuoteId = 76,
                             Speaker = "CarlWeathers",
                             Text = "Now you take this home, throw it in a pot, add some broth, a potato"
                         },
                         new
                         {
-                            QuoteId = 78,
-                            NumberOfWords = 21,
+                            QuoteId = 77,
                             Speaker = "CarlWeathers",
                             Text = "Baby, you got a stew going"
                         },
                         new
                         {
-                            QuoteId = 79,
-                            NumberOfWords = 6,
+                            QuoteId = 78,
                             Speaker = "CarlWeathers",
                             Text = "Never once touched my per diem"
                         },
                         new
                         {
-                            QuoteId = 80,
-                            NumberOfWords = 5,
+                            QuoteId = 79,
                             Speaker = "Buster",
                             Text = "Army had a half day"
                         },
                         new
                         {
-                            QuoteId = 81,
-                            NumberOfWords = 16,
+                            QuoteId = 80,
                             Speaker = "Michael",
                             Text = "The mere fact that you call making love \"pop pop\" tells me that you're not ready"
                         },
                         new
                         {
-                            QuoteId = 82,
-                            NumberOfWords = 17,
+                            QuoteId = 81,
                             Speaker = "Unknown",
                             Text = "I'd have to get up pretty early in the morning to get drunk by 1 o' clock"
                         },
                         new
                         {
-                            QuoteId = 83,
-                            NumberOfWords = 5,
+                            QuoteId = 82,
                             Speaker = "Tobias",
                             Text = "There are dozens of us"
                         },
                         new
                         {
-                            QuoteId = 84,
-                            NumberOfWords = 12,
+                            QuoteId = 83,
                             Speaker = "Michael",
                             Text = "I think you're going to be surprised at some of your phrasing"
                         },
                         new
                         {
-                            QuoteId = 85,
-                            NumberOfWords = 7,
+                            QuoteId = 84,
                             Speaker = "GeorgeSenior",
                             Text = "Stop licking my hand, you horse's ass"
                         },
                         new
                         {
-                            QuoteId = 86,
-                            NumberOfWords = 6,
+                            QuoteId = 85,
                             Speaker = "Tobias",
                             Text = "I'm afraid I just blue myself"
                         },
                         new
                         {
-                            QuoteId = 87,
-                            NumberOfWords = 12,
+                            QuoteId = 86,
                             Speaker = "Lindsay",
                             Text = "Why don't we just take an ad out in \"I'm Poor\" magazine?"
                         },
                         new
                         {
-                            QuoteId = 88,
-                            NumberOfWords = 8,
+                            QuoteId = 87,
                             Speaker = "Unknown",
                             Text = "And that's why you always leave a note"
                         },
                         new
                         {
-                            QuoteId = 89,
-                            NumberOfWords = 12,
+                            QuoteId = 88,
                             Speaker = "Unknown",
                             Text = "It's not your fault your parents were cousins, but here we are"
                         },
                         new
                         {
-                            QuoteId = 90,
-                            NumberOfWords = 6,
+                            QuoteId = 89,
                             Speaker = "Unknown",
                             Text = "You're going to get some hop-ons"
                         },
                         new
                         {
-                            QuoteId = 91,
-                            NumberOfWords = 13,
+                            QuoteId = 90,
                             Speaker = "GOB",
                             Text = "It just seems like there's still light coming in from under the door"
                         },
                         new
                         {
-                            QuoteId = 92,
-                            NumberOfWords = 6,
+                            QuoteId = 91,
                             Speaker = "Buster",
                             Text = "I'm leaving my mother for you"
                         },
                         new
                         {
-                            QuoteId = 93,
-                            NumberOfWords = 4,
+                            QuoteId = 92,
                             Speaker = "Buster",
                             Text = "You're replacing my mother"
                         },
                         new
                         {
-                            QuoteId = 94,
-                            NumberOfWords = 13,
+                            QuoteId = 93,
                             Speaker = "Tobias",
                             Text = "Even if it means me taking a chubby, I will suck it up"
                         },
                         new
                         {
-                            QuoteId = 95,
-                            NumberOfWords = 12,
+                            QuoteId = 94,
                             Speaker = "Tobias",
                             Text = "If she's not going to say anything, I certainly can't help her"
                         },
                         new
                         {
-                            QuoteId = 96,
-                            NumberOfWords = 4,
-                            Speaker = "Unknown",
+                            QuoteId = 95,
+                            Speaker = "Lucille",
                             Text = "I hate this doctor"
                         },
                         new
                         {
-                            QuoteId = 97,
-                            NumberOfWords = 11,
+                            QuoteId = 96,
                             Speaker = "Unknown",
                             Text = "That's like comparing apples and some fruit nobody's ever heard of"
                         },
                         new
                         {
-                            QuoteId = 98,
-                            NumberOfWords = 9,
+                            QuoteId = 97,
                             Speaker = "SteveHolt",
                             Text = "Is that what's going to happen to my hair?"
                         },
                         new
                         {
-                            QuoteId = 99,
-                            NumberOfWords = 7,
+                            QuoteId = 98,
                             Speaker = "Unknown",
                             Text = "Finally, some good news from this guy"
                         },
                         new
                         {
-                            QuoteId = 100,
-                            NumberOfWords = 7,
+                            QuoteId = 99,
                             Speaker = "Unknown",
                             Text = "There's no other way to take that"
                         },
                         new
                         {
-                            QuoteId = 101,
-                            NumberOfWords = 12,
+                            QuoteId = 100,
                             Speaker = "Unknown",
                             Text = "He's lost his left hand, so he's going to be all right"
                         },
                         new
                         {
-                            QuoteId = 102,
-                            NumberOfWords = 6,
+                            QuoteId = 101,
                             Speaker = "Tobias",
                             Text = "Perhaps an attic shall I seek"
                         },
                         new
                         {
-                            QuoteId = 104,
-                            NumberOfWords = 5,
+                            QuoteId = 103,
                             Speaker = "Michael",
                             Text = "He's definitely got a type"
                         },
                         new
                         {
-                            QuoteId = 105,
-                            NumberOfWords = 5,
+                            QuoteId = 104,
                             Speaker = "GOB",
                             Text = "That's my son, you pothead"
                         },
                         new
                         {
-                            QuoteId = 106,
-                            NumberOfWords = 4,
+                            QuoteId = 105,
                             Speaker = "GOB",
                             Text = "God knows they're squinters"
                         },
                         new
                         {
-                            QuoteId = 107,
-                            NumberOfWords = 12,
-                            Speaker = "Rita",
+                            QuoteId = 106,
+                            Speaker = "Unknown",
                             Text = "Instead of making houses, maybe you should make land on the ocean"
                         },
                         new
                         {
-                            QuoteId = 108,
-                            NumberOfWords = 12,
-                            Speaker = "Rita",
+                            QuoteId = 107,
+                            Speaker = "Unknown",
                             Text = "Maybe you're not smart either. I didn't know until they told me"
                         },
                         new
                         {
-                            QuoteId = 109,
-                            NumberOfWords = 8,
+                            QuoteId = 108,
                             Speaker = "Unknown",
                             Text = "I've opened a door here that I regret"
                         },
                         new
                         {
-                            QuoteId = 110,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 109,
+                            Speaker = "GOB",
                             Text = "What's Spanish for \"I know you speak English\"?"
                         },
                         new
                         {
-                            QuoteId = 111,
-                            NumberOfWords = 7,
+                            QuoteId = 110,
                             Speaker = "Unknown",
                             Text = "You gave us cereal in an ashtray"
                         },
                         new
                         {
-                            QuoteId = 112,
-                            NumberOfWords = 4,
-                            Speaker = "Unknown",
+                            QuoteId = 111,
+                            Speaker = "Franklin",
                             Text = "My name is Judge"
                         },
                         new
                         {
-                            QuoteId = 113,
-                            NumberOfWords = 10,
-                            Speaker = "Oscar",
+                            QuoteId = 112,
+                            Speaker = "GeorgeSenior",
                             Text = "Why can't I have hair and money and him nothing?"
                         },
                         new
                         {
-                            QuoteId = 114,
-                            NumberOfWords = 7,
+                            QuoteId = 113,
                             Speaker = "Tobias",
                             Text = "There's the woman I'm sexually attracted to"
                         },
                         new
                         {
-                            QuoteId = 115,
-                            NumberOfWords = 5,
+                            QuoteId = 114,
                             Speaker = "Buster",
                             Text = "I was trained by Army"
                         },
                         new
                         {
-                            QuoteId = 116,
-                            NumberOfWords = 14,
+                            QuoteId = 115,
                             Speaker = "Tobias",
                             Text = "I don't want to blame it all on 9/11, but it certainly didn't help"
                         },
                         new
                         {
-                            QuoteId = 117,
-                            NumberOfWords = 1,
+                            QuoteId = 116,
                             Speaker = "Annyong",
                             Text = "Annyong"
                         },
                         new
                         {
-                            QuoteId = 118,
-                            NumberOfWords = 6,
+                            QuoteId = 117,
                             Speaker = "Unknown",
                             Text = "Brand new cars don't get waxed"
                         },
                         new
                         {
-                            QuoteId = 119,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 118,
+                            Speaker = "Oscar",
                             Text = "Maybe I'll put it in her brownie"
                         },
                         new
                         {
-                            QuoteId = 120,
-                            NumberOfWords = 10,
+                            QuoteId = 119,
                             Speaker = "Tobias",
                             Text = "You can sink your arrow into my buttocks any time"
                         },
                         new
                         {
-                            QuoteId = 121,
-                            NumberOfWords = 7,
+                            QuoteId = 120,
                             Speaker = "Unknown",
                             Text = "I thought it was a pool toy"
                         },
                         new
                         {
-                            QuoteId = 122,
-                            NumberOfWords = 9,
+                            QuoteId = 121,
                             Speaker = "Tobias",
                             Text = "I wouldn't mind kissing that man between the cheeks"
                         },
                         new
                         {
-                            QuoteId = 123,
-                            NumberOfWords = 4,
+                            QuoteId = 122,
                             Speaker = "GOB",
                             Text = "Are those police boats?"
                         },
                         new
                         {
-                            QuoteId = 125,
-                            NumberOfWords = 2,
+                            QuoteId = 124,
                             Speaker = "GOB",
                             Text = "Illusions, Michael"
                         },
                         new
                         {
-                            QuoteId = 126,
-                            NumberOfWords = 7,
+                            QuoteId = 125,
                             Speaker = "Buster",
                             Text = "Clearly the blue part is the land"
                         },
                         new
                         {
-                            QuoteId = 127,
-                            NumberOfWords = 6,
+                            QuoteId = 126,
                             Speaker = "Michael",
                             Text = "I don't know what I expected"
                         },
                         new
                         {
-                            QuoteId = 128,
-                            NumberOfWords = 1,
+                            QuoteId = 127,
                             Speaker = "Tobias",
                             Text = "Huzzah!"
                         },
                         new
                         {
-                            QuoteId = 129,
-                            NumberOfWords = 4,
+                            QuoteId = 128,
                             Speaker = "Tobias",
                             Text = "It's a wonderful restaurant"
                         },
                         new
                         {
-                            QuoteId = 130,
-                            NumberOfWords = 8,
+                            QuoteId = 129,
                             Speaker = "Michael",
                             Text = "Why are you squeezing me with your body?"
                         },
                         new
                         {
-                            QuoteId = 131,
-                            NumberOfWords = 6,
+                            QuoteId = 130,
                             Speaker = "Unknown",
                             Text = "He's going to be all right"
                         },
                         new
                         {
-                            QuoteId = 132,
-                            NumberOfWords = 7,
+                            QuoteId = 131,
                             Speaker = "Unknown",
                             Text = "I was set up by the Brits"
                         },
                         new
                         {
-                            QuoteId = 133,
-                            NumberOfWords = 6,
-                            Speaker = "Lindsay",
+                            QuoteId = 132,
+                            Speaker = "Tobias",
                             Text = "Say something that will terrify me"
                         },
                         new
                         {
-                            QuoteId = 134,
-                            NumberOfWords = 13,
+                            QuoteId = 133,
                             Speaker = "GOB",
                             Text = "I'll buy you a hundred George Michaels that you can teach to drive"
                         },
                         new
                         {
-                            QuoteId = 135,
-                            NumberOfWords = 6,
+                            QuoteId = 134,
                             Speaker = "GOB",
                             Text = "I should be in this Poof"
                         },
                         new
                         {
-                            QuoteId = 136,
-                            NumberOfWords = 4,
+                            QuoteId = 135,
                             Speaker = "TonyWonder",
                             Text = "Did somebody say Wonder?"
                         },
                         new
                         {
-                            QuoteId = 137,
-                            NumberOfWords = 5,
+                            QuoteId = 136,
                             Speaker = "GOB",
                             Text = "She turns illusions for money"
                         },
                         new
                         {
-                            QuoteId = 138,
-                            NumberOfWords = 17,
-                            Speaker = "Lucille",
+                            QuoteId = 137,
+                            Speaker = "Unknown",
                             Text = "Everything I've said about you can be covered with makeup and a lie about a thyroid problem"
                         },
                         new
                         {
-                            QuoteId = 139,
-                            NumberOfWords = 7,
+                            QuoteId = 138,
                             Speaker = "Buster",
                             Text = "He just wants to see boys' Linuses"
                         },
                         new
                         {
-                            QuoteId = 140,
-                            NumberOfWords = 9,
+                            QuoteId = 139,
                             Speaker = "Unknown",
                             Text = "Half your testicle was hanging out of that thing"
                         },
                         new
                         {
-                            QuoteId = 141,
-                            NumberOfWords = 9,
+                            QuoteId = 140,
                             Speaker = "Unknown",
                             Text = "Give me an old pro like a Robert Redford"
                         },
                         new
                         {
-                            QuoteId = 142,
-                            NumberOfWords = 5,
+                            QuoteId = 141,
                             Speaker = "Unknown",
                             Text = "Give my son the juice"
                         },
                         new
                         {
-                            QuoteId = 143,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 142,
+                            Speaker = "Lucille",
                             Text = "You look like the window of a butcher shop"
                         },
                         new
                         {
-                            QuoteId = 144,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 143,
+                            Speaker = "Buster",
                             Text = "You told me I wasn't fit to serve"
                         },
                         new
                         {
-                            QuoteId = 145,
-                            NumberOfWords = 6,
+                            QuoteId = 144,
                             Speaker = "Buster",
                             Text = "They even touched my Charlie Browns"
                         },
                         new
                         {
-                            QuoteId = 146,
-                            NumberOfWords = 4,
+                            QuoteId = 145,
                             Speaker = "Buster",
                             Text = "It's tired in here"
                         },
                         new
                         {
-                            QuoteId = 147,
-                            NumberOfWords = 7,
+                            QuoteId = 146,
                             Speaker = "Buster",
                             Text = "Make love in your own hand, mother"
                         },
                         new
                         {
-                            QuoteId = 148,
-                            NumberOfWords = 5,
+                            QuoteId = 147,
                             Speaker = "Buster",
                             Text = "Sometimes love should be terrifying"
                         },
                         new
                         {
-                            QuoteId = 149,
-                            NumberOfWords = 14,
+                            QuoteId = 148,
                             Speaker = "Buster",
                             Text = "My Army training tells me that this is going to be a hot mission"
                         },
                         new
                         {
-                            QuoteId = 152,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 151,
+                            Speaker = "Buster",
                             Text = "Can't you keep my hand to yourself?"
                         },
                         new
                         {
-                            QuoteId = 153,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 152,
+                            Speaker = "Buster",
                             Text = "Have you seen my rubber hand?"
                         },
                         new
                         {
-                            QuoteId = 154,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 153,
+                            Speaker = "Buster",
                             Text = "I've always loved those leathery little snappy faces"
                         },
                         new
                         {
-                            QuoteId = 155,
-                            NumberOfWords = 3,
-                            Speaker = "Unknown",
+                            QuoteId = 154,
+                            Speaker = "GOB",
                             Text = "Soft and alive"
                         },
                         new
                         {
-                            QuoteId = 156,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 155,
+                            Speaker = "Michael",
                             Text = "It wasn't really the pronunciation that bothered me"
                         },
                         new
                         {
-                            QuoteId = 157,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 156,
+                            Speaker = "Buster",
                             Text = "My hook is stuck in the stair car"
                         },
                         new
                         {
-                            QuoteId = 158,
-                            NumberOfWords = 11,
+                            QuoteId = 157,
                             Speaker = "Unknown",
                             Text = "And that's why you don't use one-armed persons to teach lessons"
                         },
                         new
                         {
-                            QuoteId = 159,
-                            NumberOfWords = 3,
+                            QuoteId = 158,
                             Speaker = "Unknown",
                             Text = "He's a robot!"
                         },
                         new
                         {
-                            QuoteId = 160,
-                            NumberOfWords = 19,
-                            Speaker = "Unknown",
+                            QuoteId = 159,
+                            Speaker = "Buster",
                             Text = "If the only thing I could do was lay in bed all day and eat soup, I'd be happy"
                         },
                         new
                         {
-                            QuoteId = 161,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 160,
+                            Speaker = "Buster",
                             Text = "I could just take it through a tube"
                         },
                         new
                         {
-                            QuoteId = 162,
-                            NumberOfWords = 4,
+                            QuoteId = 161,
                             Speaker = "Unknown",
                             Text = "Never let me die"
                         },
                         new
                         {
-                            QuoteId = 163,
-                            NumberOfWords = 12,
+                            QuoteId = 162,
                             Speaker = "Unknown",
                             Text = "When I miss your lips, I'll put a fig in my mouth"
                         },
                         new
                         {
-                            QuoteId = 164,
-                            NumberOfWords = 18,
-                            Speaker = "Unknown",
+                            QuoteId = 163,
+                            Speaker = "Buster",
                             Text = "My love thinks I'm a coward just because I wasted precious hospital resources to avoid my legal obligation"
                         },
                         new
                         {
-                            QuoteId = 165,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 164,
+                            Speaker = "Buster",
                             Text = "I've always pictured him in a lighthouse"
                         },
                         new
                         {
-                            QuoteId = 166,
-                            NumberOfWords = 10,
+                            QuoteId = 165,
                             Speaker = "Unknown",
                             Text = "I need to be rubbing elbows, not working your fork"
                         },
                         new
                         {
-                            QuoteId = 167,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 166,
+                            Speaker = "Buster",
                             Text = "The ocean is my second biggest fear"
                         },
                         new
                         {
-                            QuoteId = 168,
-                            NumberOfWords = 29,
-                            Speaker = "Unknown",
+                            QuoteId = 167,
+                            Speaker = "Lindsay",
                             Text = "I hope that's not a crack about my hair color, lips, forehead, nose and teeth because at least I'm not the wearing a round sweater set on my face"
                         },
                         new
                         {
-                            QuoteId = 169,
-                            NumberOfWords = 5,
+                            QuoteId = 168,
                             Speaker = "Unknown",
                             Text = "You're looking at balls here"
                         },
                         new
                         {
-                            QuoteId = 170,
-                            NumberOfWords = 4,
-                            Speaker = "Unknown",
+                            QuoteId = 169,
+                            Speaker = "GeorgeMichael",
                             Text = "I've seen the blood"
                         },
                         new
                         {
-                            QuoteId = 171,
-                            NumberOfWords = 15,
+                            QuoteId = 170,
                             Speaker = "Unknown",
                             Text = "Imagine the impact if that had come on right when we turned on the TV"
                         },
                         new
                         {
-                            QuoteId = 172,
-                            NumberOfWords = 4,
+                            QuoteId = 171,
                             Speaker = "Unknown",
                             Text = "Cool your Japanese jets"
                         },
                         new
                         {
-                            QuoteId = 173,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 172,
+                            Speaker = "Michael",
                             Text = "You forgot to say \"away\" again"
                         },
                         new
                         {
-                            QuoteId = 174,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 173,
+                            Speaker = "GOB",
                             Text = "Look at the beak on that bird"
                         },
                         new
                         {
-                            QuoteId = 175,
-                            NumberOfWords = 12,
-                            Speaker = "Unknown",
+                            QuoteId = 174,
+                            Speaker = "Tobias",
                             Text = "I think the name Michael is making you look for a man"
                         },
                         new
                         {
-                            QuoteId = 176,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 175,
+                            Speaker = "Michael",
                             Text = "You can just say \"intercourse\""
                         },
                         new
                         {
-                            QuoteId = 177,
-                            NumberOfWords = 4,
-                            Speaker = "Unknown",
+                            QuoteId = 176,
+                            Speaker = "Michael",
                             Text = "We just say \"manager\""
                         },
                         new
                         {
-                            QuoteId = 178,
-                            NumberOfWords = 3,
-                            Speaker = "Unknown",
+                            QuoteId = 177,
+                            Speaker = "Michael",
                             Text = "Doesn't matter who"
                         },
                         new
                         {
-                            QuoteId = 179,
-                            NumberOfWords = 10,
-                            Speaker = "Unknown",
+                            QuoteId = 178,
+                            Speaker = "Lucille",
                             Text = "I'd rather be dead in California than alive in Arizona"
                         },
                         new
                         {
-                            QuoteId = 180,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 179,
+                            Speaker = "Lindsay",
                             Text = "I call it hot ham water"
                         },
                         new
                         {
-                            QuoteId = 181,
-                            NumberOfWords = 7,
+                            QuoteId = 180,
                             Speaker = "Unknown",
                             Text = "He's a regular Freddie Wilson, that one"
                         },
                         new
                         {
-                            QuoteId = 182,
-                            NumberOfWords = 4,
-                            Speaker = "Unknown",
+                            QuoteId = 181,
+                            Speaker = "Michael",
                             Text = "Don't call it that"
                         },
                         new
                         {
-                            QuoteId = 183,
-                            NumberOfWords = 15,
+                            QuoteId = 182,
                             Speaker = "Unknown",
                             Text = "If you didn't have adult onset diabetes, I wouldn't mind giving you a little sugar"
                         },
                         new
                         {
-                            QuoteId = 184,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 183,
+                            Speaker = "GOB",
                             Text = "You don't want a hungry dove down your pants"
                         },
                         new
                         {
-                            QuoteId = 185,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 184,
+                            Speaker = "GOB",
                             Text = "That's how Tony Wonder lost a nut"
                         },
                         new
                         {
-                            QuoteId = 186,
-                            NumberOfWords = 13,
-                            Speaker = "Unknown",
+                            QuoteId = 185,
+                            Speaker = "GOB",
                             Text = "Why go to a banana stand when we can make YOUR banana stand?"
                         },
                         new
                         {
-                            QuoteId = 187,
-                            NumberOfWords = 11,
-                            Speaker = "Unknown",
+                            QuoteId = 186,
+                            Speaker = "GOB",
                             Text = "Don't worry, these young beauties have been nowhere near the bananas"
                         },
                         new
                         {
-                            QuoteId = 188,
-                            NumberOfWords = 12,
-                            Speaker = "Unknown",
+                            QuoteId = 187,
+                            Speaker = "GeorgeSenior",
                             Text = "And that's why you don't try to teach lessons to your father"
                         },
                         new
                         {
-                            QuoteId = 189,
-                            NumberOfWords = 8,
+                            QuoteId = 188,
                             Speaker = "Unknown",
                             Text = "We'll be the laughing stock of the boardwalk"
                         },
                         new
                         {
-                            QuoteId = 190,
-                            NumberOfWords = 11,
-                            Speaker = "Unknown",
+                            QuoteId = 189,
+                            Speaker = "GOB",
                             Text = "If you feel something moving down there, it's just the bird"
                         },
                         new
                         {
-                            QuoteId = 191,
-                            NumberOfWords = 11,
+                            QuoteId = 190,
                             Speaker = "Unknown",
                             Text = "I might have you beaten with a pillowcase full of batteries"
                         },
                         new
                         {
-                            QuoteId = 192,
-                            NumberOfWords = 14,
+                            QuoteId = 191,
                             Speaker = "Tobias",
                             Text = "The guy runs a prison; he can have any piece of ass he wants"
                         },
                         new
                         {
-                            QuoteId = 193,
-                            NumberOfWords = 6,
+                            QuoteId = 192,
                             Speaker = "Michael",
                             Text = "Who's the \"her\" in that sentence?"
                         },
                         new
                         {
-                            QuoteId = 194,
-                            NumberOfWords = 5,
+                            QuoteId = 193,
                             Speaker = "Michael",
                             Text = "Please don't call yourself that"
                         },
                         new
                         {
-                            QuoteId = 195,
-                            NumberOfWords = 13,
+                            QuoteId = 194,
                             Speaker = "Unknown",
                             Text = "I don't know why I always assume that everyone has read my screenplay"
                         },
                         new
                         {
-                            QuoteId = 196,
-                            NumberOfWords = 12,
+                            QuoteId = 195,
                             Speaker = "GOB",
                             Text = "I'm not going to spend this kind of money and not watch"
                         },
                         new
                         {
-                            QuoteId = 197,
-                            NumberOfWords = 6,
+                            QuoteId = 196,
                             Speaker = "GOB",
                             Text = "He showers her with club sauce"
                         },
                         new
                         {
-                            QuoteId = 198,
-                            NumberOfWords = 13,
+                            QuoteId = 197,
                             Speaker = "Michael",
                             Text = "You've never told me how many houses there are in the British Parliament"
                         },
                         new
                         {
-                            QuoteId = 200,
-                            NumberOfWords = 5,
+                            QuoteId = 198,
+                            Speaker = "Unknown",
+                            Text = "I think we could be more than just gym buddies"
+                        },
+                        new
+                        {
+                            QuoteId = 199,
                             Speaker = "Tobias",
                             Text = "You're blowing my mind, Frank"
                         },
                         new
                         {
-                            QuoteId = 201,
-                            NumberOfWords = 5,
-                            Speaker = "Tobias",
+                            QuoteId = 200,
+                            Speaker = "Unknown",
                             Text = "The whole backside has moles"
                         },
                         new
                         {
-                            QuoteId = 202,
-                            NumberOfWords = 5,
+                            QuoteId = 201,
                             Speaker = "Tobias",
                             Text = "There's no \"I\" in \"win\""
                         },
                         new
                         {
-                            QuoteId = 203,
-                            NumberOfWords = 5,
+                            QuoteId = 202,
                             Speaker = "Tobias",
                             Text = "Within her lies a queen"
                         },
                         new
                         {
-                            QuoteId = 204,
-                            NumberOfWords = 8,
+                            QuoteId = 203,
                             Speaker = "Unknown",
                             Text = "You can control your bladder when you're dead"
                         },
                         new
                         {
-                            QuoteId = 206,
-                            NumberOfWords = 12,
-                            Speaker = "BobLoblaw",
+                            QuoteId = 204,
+                            Speaker = "Tobias",
+                            Text = "I ought to pull down your pants and spank your ass raw"
+                        },
+                        new
+                        {
+                            QuoteId = 205,
+                            Speaker = "Unknown",
                             Text = "Why should you go to jail for a crime someone else noticed?"
                         },
                         new
                         {
-                            QuoteId = 209,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 206,
+                            Speaker = "Tobias",
+                            Text = "I was a professional twice over: an analyst and a therapist"
+                        },
+                        new
+                        {
+                            QuoteId = 207,
+                            Speaker = "Tobias",
+                            Text = "The world's first analrapist"
+                        },
+                        new
+                        {
+                            QuoteId = 208,
+                            Speaker = "Michael",
                             Text = "I shall drop you off alive, hooker or no"
                         },
                         new
                         {
-                            QuoteId = 210,
-                            NumberOfWords = 15,
+                            QuoteId = 209,
                             Speaker = "Unknown",
                             Text = "They're polite and the men all sound gay, but they will rip out your heart"
                         },
                         new
                         {
-                            QuoteId = 211,
-                            NumberOfWords = 6,
+                            QuoteId = 210,
                             Speaker = "Michael",
                             Text = "I almost had Pop-Pop in Reno"
                         },
                         new
                         {
-                            QuoteId = 212,
-                            NumberOfWords = 11,
+                            QuoteId = 211,
                             Speaker = "Tobias",
                             Text = "If this tableau I recreate, perhaps I can re-snare my mate"
                         },
                         new
                         {
-                            QuoteId = 213,
-                            NumberOfWords = 10,
+                            QuoteId = 212,
                             Speaker = "Unknown",
                             Text = "I don't want anybody to go inside that musty claptrap"
                         },
                         new
                         {
-                            QuoteId = 214,
-                            NumberOfWords = 17,
+                            QuoteId = 213,
                             Speaker = "GOB",
                             Text = "We were both waiting for our dads at that garden where the little boy found the arm"
                         },
                         new
                         {
-                            QuoteId = 215,
-                            NumberOfWords = 12,
+                            QuoteId = 214,
                             Speaker = "GOB",
                             Text = "I kind of feel like that kid who found the severed hand"
                         },
                         new
                         {
-                            QuoteId = 216,
-                            NumberOfWords = 6,
+                            QuoteId = 215,
                             Speaker = "GOB",
                             Text = "I don't see you crying, robot"
                         },
                         new
                         {
-                            QuoteId = 217,
-                            NumberOfWords = 4,
+                            QuoteId = 216,
                             Speaker = "Kitty",
                             Text = "Say goodbye to these"
                         },
                         new
                         {
-                            QuoteId = 218,
-                            NumberOfWords = 20,
+                            QuoteId = 217,
                             Speaker = "Unknown",
                             Text = "I promised myself I wasn't going to become one of those people who were always going on about their screenplays"
                         },
                         new
                         {
-                            QuoteId = 220,
-                            NumberOfWords = 13,
+                            QuoteId = 218,
+                            Speaker = "Unknown",
+                            Text = "Nobody sells any coke in this pen without daddy getting a taste"
+                        },
+                        new
+                        {
+                            QuoteId = 219,
                             Speaker = "Oscar",
                             Text = "You haven't seen a little box with a turtle on it, have you?"
                         },
                         new
                         {
-                            QuoteId = 221,
-                            NumberOfWords = 14,
+                            QuoteId = 220,
                             Speaker = "Buster",
                             Text = "My turtle was living in it before he ate all the grass and died"
                         },
                         new
                         {
-                            QuoteId = 222,
-                            NumberOfWords = 5,
+                            QuoteId = 221,
                             Speaker = "Tobias",
                             Text = "The scabs come right off"
                         },
                         new
                         {
-                            QuoteId = 223,
-                            NumberOfWords = 11,
+                            QuoteId = 222,
                             Speaker = "Unknown",
                             Text = "I can't say no to the woman who gave me chlamydia"
                         },
                         new
                         {
-                            QuoteId = 224,
-                            NumberOfWords = 10,
+                            QuoteId = 223,
                             Speaker = "Tobias",
                             Text = "People hear the name Tobias, they think big black guy"
                         },
                         new
                         {
-                            QuoteId = 225,
-                            NumberOfWords = 16,
+                            QuoteId = 224,
                             Speaker = "GOB",
                             Text = "I just don't want people's kids getting their sticky little fingers all over these $2,600 pants"
                         },
                         new
                         {
-                            QuoteId = 226,
-                            NumberOfWords = 25,
+                            QuoteId = 225,
                             Speaker = "GOB",
                             Text = "The guy who's dirty dancing with his niece is going to tell the guy in the $3,600 suit how to run the business. Come on"
                         },
                         new
                         {
-                            QuoteId = 227,
-                            NumberOfWords = 8,
+                            QuoteId = 226,
                             Speaker = "Lucille",
                             Text = "Suddenly playing with yourself is a scholarly pursuit"
                         },
                         new
                         {
-                            QuoteId = 228,
-                            NumberOfWords = 14,
+                            QuoteId = 227,
                             Speaker = "Lucille",
                             Text = "If I wanted something your thumb touched, I'd eat the inside of your ear"
                         },
                         new
                         {
-                            QuoteId = 229,
-                            NumberOfWords = 7,
+                            QuoteId = 228,
                             Speaker = "Lucille",
                             Text = "You let him go in the sun?"
                         },
                         new
                         {
-                            QuoteId = 230,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 229,
+                            Speaker = "Lucille",
                             Text = "Then why don't you marry an ice cream sandwich?"
                         },
                         new
                         {
-                            QuoteId = 231,
-                            NumberOfWords = 24,
-                            Speaker = "Tobias",
+                            QuoteId = 230,
+                            Speaker = "Buster",
                             Text = "I will pack your sweet pink mouth with so much ice cream you'll be the envy of every Jerry and Jane on the block"
                         },
                         new
                         {
-                            QuoteId = 232,
-                            NumberOfWords = 11,
+                            QuoteId = 231,
                             Speaker = "GeorgeSenior",
                             Text = "I am having a love affair with this ice cream sandwich"
                         },
                         new
                         {
-                            QuoteId = 233,
-                            NumberOfWords = 6,
+                            QuoteId = 232,
                             Speaker = "GeorgeSenior",
                             Text = "Did you stick it to her?"
                         },
                         new
                         {
-                            QuoteId = 234,
-                            NumberOfWords = 4,
+                            QuoteId = 233,
                             Speaker = "GeorgeSenior",
                             Text = "Pop-Pop needs your hair"
                         },
                         new
                         {
-                            QuoteId = 235,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 234,
+                            Speaker = "Lucille",
                             Text = "At least he's in prison, not an urn"
                         },
                         new
                         {
-                            QuoteId = 236,
-                            NumberOfWords = 10,
+                            QuoteId = 235,
                             Speaker = "Unknown",
                             Text = "You know the hair that no one's supposed to see?"
                         },
                         new
                         {
-                            QuoteId = 237,
-                            NumberOfWords = 8,
+                            QuoteId = 236,
                             Speaker = "Unknown",
                             Text = "Everyone put on white robes and outsmarted us"
                         },
                         new
                         {
-                            QuoteId = 238,
-                            NumberOfWords = 10,
+                            QuoteId = 237,
                             Speaker = "Tobias",
                             Text = "We shan't be telling your mother about this, shan't we?"
                         },
                         new
                         {
-                            QuoteId = 239,
-                            NumberOfWords = 8,
+                            QuoteId = 238,
                             Speaker = "Unknown",
                             Text = "Now there's somebody who needs a good mother"
                         },
                         new
                         {
-                            QuoteId = 240,
-                            NumberOfWords = 7,
+                            QuoteId = 239,
                             Speaker = "Lucille",
                             Text = "I'll leave when I'm good and ready"
                         },
                         new
                         {
-                            QuoteId = 241,
-                            NumberOfWords = 12,
+                            QuoteId = 240,
                             Speaker = "Maeby",
                             Text = "I need one of those necklaces in the shape of a T"
                         },
                         new
                         {
-                            QuoteId = 242,
-                            NumberOfWords = 8,
-                            Speaker = "Lindsay",
+                            QuoteId = 241,
+                            Speaker = "Unknown",
                             Text = "There's a cream with real diamonds in it"
                         },
                         new
                         {
-                            QuoteId = 243,
-                            NumberOfWords = 5,
+                            QuoteId = 242,
                             Speaker = "Tobias",
                             Text = "You, sir, are a mouthful"
                         },
                         new
                         {
-                            QuoteId = 244,
-                            NumberOfWords = 15,
+                            QuoteId = 243,
                             Speaker = "GOB",
                             Text = "If I can't find a horny immigrant by then, I don't deserve to stay here"
                         },
                         new
                         {
-                            QuoteId = 245,
-                            NumberOfWords = 17,
+                            QuoteId = 244,
                             Speaker = "Tobias",
                             Text = "There's a man inside me, and only when he's finally out can I walk free of pain"
                         },
                         new
                         {
-                            QuoteId = 246,
-                            NumberOfWords = 32,
+                            QuoteId = 245,
                             Speaker = "Tobias",
                             Text = "I'm afraid I prematurely shot my wad on what was supposed to be a \"dry run\", if you will, so now I'm afraid I have something of a mess on my hands"
                         },
                         new
                         {
-                            QuoteId = 247,
-                            NumberOfWords = 5,
+                            QuoteId = 246,
                             Speaker = "GOB",
                             Text = "I've made a huge mistake"
                         },
                         new
                         {
-                            QuoteId = 248,
-                            NumberOfWords = 16,
+                            QuoteId = 247,
                             Speaker = "Tobias",
                             Text = "You are playing adults with fully-formed libidos, not two young men playing grab-ass in the shower"
                         },
                         new
                         {
-                            QuoteId = 249,
-                            NumberOfWords = 13,
+                            QuoteId = 248,
                             Speaker = "GeorgeMichael",
                             Text = "I can't go on a million bike rides whenever you want me to"
                         },
                         new
                         {
-                            QuoteId = 250,
-                            NumberOfWords = 13,
-                            Speaker = "Unknown",
+                            QuoteId = 249,
+                            Speaker = "GeorgeSenior",
                             Text = "The doctor said there were claw marks on the walls of her uterus"
                         },
                         new
                         {
-                            QuoteId = 251,
-                            NumberOfWords = 8,
+                            QuoteId = 250,
                             Speaker = "Buster",
                             Text = "It's like she gets off on being withholding"
                         },
                         new
                         {
-                            QuoteId = 252,
-                            NumberOfWords = 7,
+                            QuoteId = 251,
                             Speaker = "GOB",
                             Text = "Look who's ragging on the old lady"
                         },
                         new
                         {
-                            QuoteId = 253,
-                            NumberOfWords = 5,
+                            QuoteId = 252,
                             Speaker = "Lucille",
                             Text = "Look at me, \"getting off\""
                         },
                         new
                         {
-                            QuoteId = 254,
-                            NumberOfWords = 7,
+                            QuoteId = 253,
                             Speaker = "Unknown",
                             Text = "I always ended up on all fours"
                         },
                         new
                         {
-                            QuoteId = 255,
-                            NumberOfWords = 4,
+                            QuoteId = 254,
                             Speaker = "Tobias",
                             Text = "This kind of agility?"
                         },
                         new
                         {
-                            QuoteId = 256,
-                            NumberOfWords = 17,
+                            QuoteId = 255,
                             Speaker = "Tobias",
                             Text = "Do you see me more as the respected dramatic actor or more of the beloved comic actor?"
                         },
                         new
                         {
-                            QuoteId = 257,
-                            NumberOfWords = 18,
-                            Speaker = "Unknown",
+                            QuoteId = 256,
+                            Speaker = "GOB",
                             Text = "I don't even want to tell you what she wouldn't let me do to her in the car"
                         },
                         new
                         {
-                            QuoteId = 258,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 257,
+                            Speaker = "Buster",
                             Text = "I thought you had class"
                         },
                         new
                         {
-                            QuoteId = 259,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 258,
+                            Speaker = "Tobias",
                             Text = "Carl Weathers took everything from me"
                         },
                         new
                         {
-                            QuoteId = 260,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 259,
+                            Speaker = "Tobias",
                             Text = "You could have been sleeping with Frightened Inmate #2"
                         },
                         new
                         {
-                            QuoteId = 261,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 260,
+                            Speaker = "GeorgeMichael",
                             Text = "Some call me The Human Metronome"
                         },
                         new
                         {
-                            QuoteId = 262,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 261,
+                            Speaker = "GOB",
                             Text = "So far it's been all chain and no ball"
                         },
                         new
                         {
-                            QuoteId = 263,
-                            NumberOfWords = 10,
+                            QuoteId = 262,
                             Speaker = "Unknown",
                             Text = "Not everything is strippers and booze and buckets of blood"
                         },
                         new
                         {
-                            QuoteId = 264,
-                            NumberOfWords = 5,
+                            QuoteId = 263,
                             Speaker = "Unknown",
                             Text = "You're out of the band"
                         },
                         new
                         {
-                            QuoteId = 265,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 264,
+                            Speaker = "Buster",
                             Text = "I've already got a Lucille in my life"
                         },
                         new
                         {
-                            QuoteId = 266,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 265,
+                            Speaker = "Buster",
                             Text = "Is this something society will allow?"
                         },
                         new
                         {
-                            QuoteId = 267,
-                            NumberOfWords = 11,
-                            Speaker = "Unknown",
+                            QuoteId = 266,
+                            Speaker = "Buster",
                             Text = "I just jumped through a plate glass window on a date"
                         },
                         new
                         {
-                            QuoteId = 268,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 267,
+                            Speaker = "Kitty",
                             Text = "I have been Googling your father"
                         },
                         new
                         {
-                            QuoteId = 269,
-                            NumberOfWords = 8,
+                            QuoteId = 268,
                             Speaker = "Unknown",
                             Text = "I sold you for a pack of cigarettes"
                         },
                         new
                         {
-                            QuoteId = 270,
-                            NumberOfWords = 4,
-                            Speaker = "Unknown",
+                            QuoteId = 269,
+                            Speaker = "GeorgeSenior",
                             Text = "You don't fire crazy"
                         },
                         new
                         {
-                            QuoteId = 271,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 270,
+                            Speaker = "GeorgeSenior",
                             Text = "All these books are cooked"
                         },
                         new
                         {
-                            QuoteId = 272,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 271,
+                            Speaker = "GeorgeMichael",
                             Text = "It's like a mind puzzle, an awesome mind puzzle"
                         },
                         new
                         {
-                            QuoteId = 273,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 272,
+                            Speaker = "GeorgeMichael",
                             Text = "Talk you off of what, Pop-Pop?"
                         },
                         new
                         {
-                            QuoteId = 274,
-                            NumberOfWords = 10,
-                            Speaker = "Unknown",
+                            QuoteId = 273,
+                            Speaker = "GOB",
                             Text = "Where once there was a yacht, now there is naught"
                         },
                         new
                         {
-                            QuoteId = 275,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 274,
+                            Speaker = "GOB",
                             Text = "Who doesn't love the Jews?"
                         },
                         new
                         {
-                            QuoteId = 276,
-                            NumberOfWords = 10,
+                            QuoteId = 275,
                             Speaker = "GeorgeMichael",
                             Text = "I was going to smoke the marijuana like a cigarette"
                         },
                         new
                         {
-                            QuoteId = 277,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 276,
+                            Speaker = "Michael",
                             Text = "They don't allow you to have bees in here"
                         },
                         new
                         {
-                            QuoteId = 278,
-                            NumberOfWords = 7,
+                            QuoteId = 277,
                             Speaker = "Barry",
                             Text = "I think something laid eggs on me"
                         },
                         new
                         {
-                            QuoteId = 279,
-                            NumberOfWords = 17,
+                            QuoteId = 278,
                             Speaker = "Annyong",
                             Text = "Mother say no carbohydrate for you if you ever going to get girlfriend that's not old lady"
                         },
                         new
                         {
-                            QuoteId = 280,
-                            NumberOfWords = 12,
+                            QuoteId = 279,
                             Speaker = "Annyong",
                             Text = "Maybe we should kiss again to teach them a lesson about obvious"
                         },
                         new
                         {
-                            QuoteId = 281,
-                            NumberOfWords = 5,
+                            QuoteId = 280,
                             Speaker = "Lucille",
                             Text = "Look how he zips now"
                         },
                         new
                         {
-                            QuoteId = 282,
-                            NumberOfWords = 10,
+                            QuoteId = 281,
                             Speaker = "Unknown",
                             Text = "I should have never taken the pumps out of here"
                         },
                         new
                         {
-                            QuoteId = 284,
-                            NumberOfWords = 18,
+                            QuoteId = 282,
+                            Speaker = "GOB",
+                            Text = "You just can't deal with the fact that I've got a super-thin wife with huge cans"
+                        },
+                        new
+                        {
+                            QuoteId = 283,
                             Speaker = "Unknown",
                             Text = "Did you know that you can get a refill on any drink you want here, and it's free?"
                         },
                         new
                         {
-                            QuoteId = 285,
-                            NumberOfWords = 14,
+                            QuoteId = 284,
                             Speaker = "Unknown",
                             Text = "Aren't you the sweetest thing, spending some time with what's left of your uncle"
                         },
                         new
                         {
-                            QuoteId = 286,
-                            NumberOfWords = 12,
+                            QuoteId = 285,
                             Speaker = "Unknown",
                             Text = "He couldn't wait to swoop in and throw on the sailor suit"
                         },
                         new
                         {
-                            QuoteId = 287,
-                            NumberOfWords = 6,
-                            Speaker = "Franklin",
+                            QuoteId = 286,
+                            Speaker = "Unknown",
                             Text = "I got children all over town"
                         },
                         new
                         {
-                            QuoteId = 288,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 287,
+                            Speaker = "Buster",
                             Text = "My father is my uncle"
                         },
                         new
                         {
-                            QuoteId = 289,
-                            NumberOfWords = 9,
+                            QuoteId = 288,
                             Speaker = "Unknown",
                             Text = "That's the kind of joke he would have loved"
                         },
                         new
                         {
-                            QuoteId = 290,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 289,
+                            Speaker = "Tobias",
                             Text = "Who'd like a banger in the mouth?"
                         },
                         new
                         {
-                            QuoteId = 291,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 290,
+                            Speaker = "Michael",
                             Text = "We just call it a sausage"
                         },
                         new
                         {
-                            QuoteId = 292,
-                            NumberOfWords = 10,
+                            QuoteId = 291,
                             Speaker = "GOB",
                             Text = "Franklin said some things Whitey just wasn't ready to hear"
                         },
                         new
                         {
-                            QuoteId = 293,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 292,
+                            Speaker = "Tobias",
                             Text = "I forgot that we were in the colonies"
                         },
                         new
                         {
-                            QuoteId = 294,
-                            NumberOfWords = 6,
+                            QuoteId = 293,
                             Speaker = "Unknown",
                             Text = "Take me to your secular world"
                         },
                         new
                         {
-                            QuoteId = 295,
-                            NumberOfWords = 4,
-                            Speaker = "Unknown",
+                            QuoteId = 294,
+                            Speaker = "GOB",
                             Text = "My socks are wet"
                         },
                         new
                         {
-                            QuoteId = 296,
-                            NumberOfWords = 4,
-                            Speaker = "Unknown",
+                            QuoteId = 295,
+                            Speaker = "GOB",
                             Text = "Me quick, want slow"
                         },
                         new
                         {
-                            QuoteId = 297,
-                            NumberOfWords = 3,
+                            QuoteId = 296,
                             Speaker = "Unknown",
                             Text = "Tea for dong!"
                         },
                         new
                         {
-                            QuoteId = 298,
-                            NumberOfWords = 10,
-                            Speaker = "Unknown",
+                            QuoteId = 297,
+                            Speaker = "Tobias",
                             Text = "I'd want to get in there and find some answers"
                         },
                         new
                         {
-                            QuoteId = 299,
-                            NumberOfWords = 10,
-                            Speaker = "Unknown",
+                            QuoteId = 298,
+                            Speaker = "Tobias",
                             Text = "Excuse me for liking the way they shape my junk"
                         },
                         new
                         {
-                            QuoteId = 300,
-                            NumberOfWords = 16,
+                            QuoteId = 299,
                             Speaker = "Ann",
                             Text = "It's not just going to be my love and George Michael's, but God's love as well"
                         },
                         new
                         {
-                            QuoteId = 301,
-                            NumberOfWords = 5,
+                            QuoteId = 300,
                             Speaker = "Unknown",
                             Text = "Can it open a can?"
                         },
                         new
                         {
-                            QuoteId = 302,
-                            NumberOfWords = 8,
+                            QuoteId = 301,
                             Speaker = "Unknown",
                             Text = "A seal didn't bite your Linus off, right?"
                         },
                         new
                         {
-                            QuoteId = 303,
-                            NumberOfWords = 8,
+                            QuoteId = 302,
                             Speaker = "Unknown",
                             Text = "No, a seal didn't bite my Linus off"
                         },
                         new
                         {
-                            QuoteId = 304,
-                            NumberOfWords = 3,
-                            Speaker = "Unknown",
+                            QuoteId = 303,
+                            Speaker = "GeorgeSenior",
                             Text = "Up yours, granny!"
                         },
                         new
                         {
-                            QuoteId = 305,
-                            NumberOfWords = 4,
-                            Speaker = "Unknown",
+                            QuoteId = 304,
+                            Speaker = "Lucille",
                             Text = "You couldn't handle it!"
                         },
                         new
                         {
-                            QuoteId = 306,
-                            NumberOfWords = 13,
-                            Speaker = "Unknown",
+                            QuoteId = 305,
+                            Speaker = "Tobias",
                             Text = "Seems like only yesterday you were bursting forth from your mother's fertile womb"
                         },
                         new
                         {
-                            QuoteId = 307,
-                            NumberOfWords = 12,
+                            QuoteId = 306,
                             Speaker = "Maeby",
                             Text = "You don't see me nervous about being on my third Virgin Mary"
                         },
                         new
                         {
-                            QuoteId = 308,
-                            NumberOfWords = 24,
-                            Speaker = "Unknown",
+                            QuoteId = 307,
+                            Speaker = "Lucille",
                             Text = "You are a worse psychiatrist than you are a son-in-law, and you will never get work as an actor because you have no talent"
                         },
                         new
                         {
-                            QuoteId = 309,
-                            NumberOfWords = 16,
-                            Speaker = "Unknown",
+                            QuoteId = 308,
+                            Speaker = "Tobias",
                             Text = "I had no idea a ninety year-old man could cave in my chest cavity like that"
                         },
                         new
                         {
-                            QuoteId = 310,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 309,
+                            Speaker = "Tobias",
                             Text = "I think your knee is on my heart"
                         },
                         new
                         {
-                            QuoteId = 311,
-                            NumberOfWords = 19,
-                            Speaker = "Unknown",
+                            QuoteId = 310,
+                            Speaker = "Tobias",
                             Text = "I'm afraid I prematurely shot my wad on what was supposed to be a dry run, if you will"
                         },
                         new
                         {
-                            QuoteId = 312,
-                            NumberOfWords = 14,
-                            Speaker = "Unknown",
+                            QuoteId = 311,
+                            Speaker = "Lucille",
                             Text = "I'm going to see if I can get a wrench to strip my nuts"
                         },
                         new
                         {
-                            QuoteId = 313,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 312,
+                            Speaker = "GeorgeSenior",
                             Text = "I haven't had a massage since prison"
                         },
                         new
                         {
-                            QuoteId = 314,
-                            NumberOfWords = 3,
-                            Speaker = "Unknown",
+                            QuoteId = 313,
+                            Speaker = "Lucille",
                             Text = "He's an alpaca"
                         },
                         new
                         {
-                            QuoteId = 315,
-                            NumberOfWords = 13,
-                            Speaker = "Unknown",
+                            QuoteId = 314,
+                            Speaker = "GOB",
                             Text = "One of this guy's eyebrows just fell in the bowl of candy beans"
                         },
                         new
                         {
-                            QuoteId = 316,
-                            NumberOfWords = 10,
-                            Speaker = "Unknown",
+                            QuoteId = 315,
+                            Speaker = "Michael",
                             Text = "I think George Michael is hiding Ann in the attic"
                         },
                         new
                         {
-                            QuoteId = 317,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 316,
+                            Speaker = "Michael",
                             Text = "It's as Ann as the nose on Plain's face"
                         },
                         new
                         {
-                            QuoteId = 318,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 317,
+                            Speaker = "GeorgeMichael",
                             Text = "I have Pop-Pop in the attic"
                         },
                         new
                         {
-                            QuoteId = 319,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 318,
+                            Speaker = "Tobias",
                             Text = "Who wants to go to the hospital?"
                         },
                         new
                         {
-                            QuoteId = 320,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 319,
+                            Speaker = "Tobias",
                             Text = "That was 100% inappropriate, and I do apologize profusely"
                         },
                         new
                         {
-                            QuoteId = 321,
-                            NumberOfWords = 17,
-                            Speaker = "Unknown",
+                            QuoteId = 320,
+                            Speaker = "Buster",
                             Text = "I ought to point to Uncle Oscar's Charlie Browns next time you're on top of him, Mother"
                         },
                         new
                         {
-                            QuoteId = 322,
-                            NumberOfWords = 17,
-                            Speaker = "Unknown",
+                            QuoteId = 321,
+                            Speaker = "Tobias",
                             Text = "I figured if I blue myself early I'd be nice and relaxed for a 9:00 dinner reservation"
                         },
                         new
                         {
-                            QuoteId = 323,
-                            NumberOfWords = 14,
-                            Speaker = "Unknown",
+                            QuoteId = 322,
+                            Speaker = "Lindsay",
                             Text = "I can actually smear diamonds on my face, and it's only $400 a tub"
                         },
                         new
                         {
-                            QuoteId = 324,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 323,
+                            Speaker = "GeorgeMichael",
                             Text = "She calls it a 'mayon-egg'"
                         },
                         new
                         {
-                            QuoteId = 325,
-                            NumberOfWords = 14,
-                            Speaker = "Unknown",
+                            QuoteId = 324,
+                            Speaker = "Buster",
                             Text = "Mom volunteered me for the Army just because the fat man dared her to"
                         },
                         new
                         {
-                            QuoteId = 326,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 325,
+                            Speaker = "GOB",
                             Text = "The tears just aren't coming"
                         },
                         new
                         {
-                            QuoteId = 327,
-                            NumberOfWords = 11,
+                            QuoteId = 326,
                             Speaker = "Unknown",
                             Text = "You mean you can wear stripper clothes when you're not stripping?"
                         },
                         new
                         {
-                            QuoteId = 328,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 327,
+                            Speaker = "GeorgeSenior",
                             Text = "You could hump that hood"
                         },
                         new
                         {
-                            QuoteId = 329,
-                            NumberOfWords = 7,
+                            QuoteId = 328,
                             Speaker = "GeorgeMichael",
                             Text = "What a fun sexy time for you"
                         },
                         new
                         {
-                            QuoteId = 330,
-                            NumberOfWords = 8,
+                            QuoteId = 329,
                             Speaker = "Unknown",
                             Text = "What I'm calling you is a television actor"
                         },
                         new
                         {
-                            QuoteId = 331,
-                            NumberOfWords = 14,
+                            QuoteId = 330,
                             Speaker = "Unknown",
                             Text = "There's only one man I've ever called a coward, and that's Brian Doyle Murray"
                         },
                         new
                         {
-                            QuoteId = 332,
-                            NumberOfWords = 13,
+                            QuoteId = 331,
                             Speaker = "Unknown",
                             Text = "We do not wag our genitals at one another to make a point"
                         },
                         new
                         {
-                            QuoteId = 333,
-                            NumberOfWords = 17,
-                            Speaker = "Unknown",
+                            QuoteId = 332,
+                            Speaker = "GOB",
                             Text = "It's a mainstay of the magician's toolkit, like how clowns always have a rag soaked in ether"
                         },
                         new
                         {
-                            QuoteId = 334,
-                            NumberOfWords = 16,
-                            Speaker = "Unknown",
+                            QuoteId = 333,
+                            Speaker = "GOB",
                             Text = "The worst that could happen is that I could spill coffee all over this $3,000 suit"
                         },
                         new
                         {
-                            QuoteId = 335,
-                            NumberOfWords = 7,
+                            QuoteId = 334,
                             Speaker = "Unknown",
                             Text = "I came out of you, he didn't"
                         },
                         new
                         {
-                            QuoteId = 336,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 335,
+                            Speaker = "Michael",
                             Text = "I liked it better when he just said Annyong"
                         },
                         new
                         {
-                            QuoteId = 337,
-                            NumberOfWords = 11,
-                            Speaker = "Unknown",
+                            QuoteId = 336,
+                            Speaker = "GeorgeSenior",
                             Text = "Maybe it was the eleven months he spent in the womb"
                         },
                         new
                         {
-                            QuoteId = 338,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
-                            Text = "You don't cry when you take those off?"
+                            QuoteId = 337,
+                            Speaker = "Tobias",
+                            Text = "You dont cry when you take those off?"
                         },
                         new
                         {
-                            QuoteId = 339,
-                            NumberOfWords = 10,
-                            Speaker = "Unknown",
+                            QuoteId = 338,
+                            Speaker = "GeorgeSenior",
                             Text = "How many times I gotta tell this kid chicken wings?"
                         },
                         new
                         {
-                            QuoteId = 340,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 339,
+                            Speaker = "Tobias",
                             Text = "Somebody is a rude Gus"
                         },
                         new
                         {
-                            QuoteId = 341,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 340,
+                            Speaker = "GOB",
                             Text = "I can't even fake the death of a stripper"
                         },
                         new
                         {
-                            QuoteId = 342,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 341,
+                            Speaker = "GOB",
                             Text = "You didn't eat that dove, did you?"
                         },
                         new
                         {
-                            QuoteId = 343,
-                            NumberOfWords = 14,
+                            QuoteId = 342,
                             Speaker = "Unknown",
                             Text = "If someone had left a note, this innocent man would still have his arm"
                         },
                         new
                         {
-                            QuoteId = 344,
-                            NumberOfWords = 12,
+                            QuoteId = 343,
                             Speaker = "Unknown",
                             Text = "You'd think a man locked up in prison would able to abstain"
                         },
                         new
                         {
-                            QuoteId = 345,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 344,
+                            Speaker = "Lucille",
                             Text = "Your father with his disgusting tweaking"
                         },
                         new
                         {
-                            QuoteId = 346,
-                            NumberOfWords = 12,
-                            Speaker = "Unknown",
+                            QuoteId = 345,
+                            Speaker = "Lucille",
                             Text = "I couldn't breast feed any of you kids because of that man"
                         },
                         new
                         {
-                            QuoteId = 347,
-                            NumberOfWords = 15,
-                            Speaker = "Unknown",
+                            QuoteId = 346,
+                            Speaker = "Michael",
                             Text = "This is the nicest she's been since she found out that Rosa could breast-feed Buster"
                         },
                         new
                         {
-                            QuoteId = 348,
-                            NumberOfWords = 14,
-                            Speaker = "Unknown",
+                            QuoteId = 347,
+                            Speaker = "GOB",
                             Text = "First you dump all over it, now you want to know how it's done"
                         },
                         new
                         {
-                            QuoteId = 349,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 348,
+                            Speaker = "Tobias",
                             Text = "I feel like the prettiest girl at the dance"
                         },
                         new
                         {
-                            QuoteId = 350,
-                            NumberOfWords = 14,
-                            Speaker = "Unknown",
+                            QuoteId = 349,
+                            Speaker = "Tobias",
                             Text = "I need to go take down the buffet and set up the leather pony"
                         },
                         new
                         {
-                            QuoteId = 351,
-                            NumberOfWords = 11,
-                            Speaker = "Unknown",
+                            QuoteId = 350,
+                            Speaker = "GeorgeSenior",
                             Text = "They cannot arrest a husband and wife for the same crime"
                         },
                         new
                         {
-                            QuoteId = 352,
-                            NumberOfWords = 20,
-                            Speaker = "Unknown",
+                            QuoteId = 351,
+                            Speaker = "GeorgeMichael",
                             Text = "Say what you want about America - thirteen bucks can still get you a hell of a lot of mice"
                         },
                         new
                         {
-                            QuoteId = 353,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 352,
+                            Speaker = "GOB",
                             Text = "Who said anything bad about America?"
                         },
                         new
                         {
-                            QuoteId = 354,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 353,
+                            Speaker = "GeorgeMichael",
                             Text = "So I'm thinking of getting a motorcycle"
                         },
                         new
                         {
-                            QuoteId = 355,
-                            NumberOfWords = 11,
-                            Speaker = "Unknown",
+                            QuoteId = 354,
+                            Speaker = "Maeby",
                             Text = "Your legs look exactly like mine, and I just shaved mine"
                         },
                         new
                         {
-                            QuoteId = 356,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 355,
+                            Speaker = "Tobias",
                             Text = "I'm looking for something that says \"Dad likes leather\""
                         },
                         new
                         {
-                            QuoteId = 357,
-                            NumberOfWords = 11,
-                            Speaker = "Unknown",
+                            QuoteId = 356,
+                            Speaker = "Tobias",
                             Text = "You have to be some sort of she-hulk to get this"
                         },
                         new
                         {
-                            QuoteId = 358,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 357,
+                            Speaker = "Buster",
                             Text = "Mom, you're ruining our fort"
                         },
                         new
                         {
-                            QuoteId = 359,
-                            NumberOfWords = 8,
+                            QuoteId = 358,
                             Speaker = "Unknown",
                             Text = "Who'd want to mess with any of us?"
                         },
                         new
                         {
-                            QuoteId = 360,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 359,
+                            Speaker = "GeorgeMichael",
                             Text = "Trying to introduce some edge to the whole palette"
                         },
                         new
                         {
-                            QuoteId = 361,
-                            NumberOfWords = 12,
-                            Speaker = "Unknown",
+                            QuoteId = 360,
+                            Speaker = "Lucille",
                             Text = "Is she the one who's going to take him to the dentist?"
                         },
                         new
                         {
-                            QuoteId = 362,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 361,
+                            Speaker = "UncleJack",
                             Text = "You're right inside me now"
                         },
                         new
                         {
-                            QuoteId = 363,
-                            NumberOfWords = 11,
+                            QuoteId = 362,
                             Speaker = "Unknown",
                             Text = "I can't believe they wouldn't even give me a wheelchair ride"
                         },
                         new
                         {
-                            QuoteId = 364,
-                            NumberOfWords = 10,
-                            Speaker = "Unknown",
+                            QuoteId = 363,
+                            Speaker = "Buster",
                             Text = "Doesn't this make you want to have an ice-cream cone?"
                         },
                         new
                         {
-                            QuoteId = 365,
-                            NumberOfWords = 11,
-                            Speaker = "Unknown",
+                            QuoteId = 364,
+                            Speaker = "Buster",
                             Text = "I do believe there was some mention of some ice cream"
                         },
                         new
                         {
-                            QuoteId = 366,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 365,
+                            Speaker = "Buster",
                             Text = "Does anyone know how to eat one of these?"
                         },
                         new
                         {
-                            QuoteId = 367,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 366,
+                            Speaker = "Tobias",
                             Text = "There's a new daddy in town. A discipline daddy."
                         },
                         new
                         {
-                            QuoteId = 368,
-                            NumberOfWords = 11,
+                            QuoteId = 367,
                             Speaker = "Unknown",
                             Text = "I tried hitchhiking, but it's hard to do without a thumb"
                         },
                         new
                         {
-                            QuoteId = 369,
-                            NumberOfWords = 29,
-                            Speaker = "Unknown",
+                            QuoteId = 368,
+                            Speaker = "Tobias",
                             Text = "Now what we do is we paint our lips Joan Crawford red, pop on a little blue eyeliner and then plant a lipstick kiss on every one of them"
                         },
                         new
                         {
-                            QuoteId = 370,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 369,
+                            Speaker = "GOB",
                             Text = "Still, where'd the lighter fluid come from?"
                         },
                         new
                         {
-                            QuoteId = 371,
-                            NumberOfWords = 5,
+                            QuoteId = 370,
                             Speaker = "Unknown",
                             Text = "Larry, go to a mirror"
                         },
                         new
                         {
-                            QuoteId = 372,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 371,
+                            Speaker = "Tobias",
                             Text = "Why am I not going under water?"
                         },
                         new
                         {
-                            QuoteId = 373,
-                            NumberOfWords = 17,
+                            QuoteId = 372,
                             Speaker = "Unknown",
                             Text = "Why did I lose all the weight if they're going to put me in a pool cover?"
                         },
                         new
                         {
-                            QuoteId = 374,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 373,
+                            Speaker = "GeorgeMichael",
                             Text = "I wish I could draw her nose"
                         },
                         new
                         {
-                            QuoteId = 375,
-                            NumberOfWords = 11,
-                            Speaker = "Unknown",
+                            QuoteId = 374,
+                            Speaker = "Tobias",
                             Text = "I just found out that my cellular telephone was a lemon"
                         },
                         new
                         {
-                            QuoteId = 376,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 375,
+                            Speaker = "Michael",
                             Text = "Are you wearing my dead wife's maternity clothes?"
                         },
                         new
                         {
-                            QuoteId = 377,
-                            NumberOfWords = 6,
+                            QuoteId = 376,
                             Speaker = "Unknown",
                             Text = "I can't get this ham open"
                         },
                         new
                         {
-                            QuoteId = 378,
-                            NumberOfWords = 16,
-                            Speaker = "Unknown",
+                            QuoteId = 377,
+                            Speaker = "Tobias",
                             Text = "If he's got a shot with her, just give me a little tap on the fanny"
                         },
                         new
                         {
-                            QuoteId = 379,
-                            NumberOfWords = 15,
-                            Speaker = "Unknown",
+                            QuoteId = 378,
+                            Speaker = "GOB",
                             Text = "Now, when you do this without getting punched in the chest, you'll have more fun"
                         },
                         new
                         {
-                            QuoteId = 380,
-                            NumberOfWords = 14,
-                            Speaker = "Unknown",
+                            QuoteId = 379,
+                            Speaker = "Tobias",
                             Text = "The Blue Man Group might need me, and I do deserve a fancy phone"
                         },
                         new
                         {
-                            QuoteId = 381,
-                            NumberOfWords = 12,
-                            Speaker = "Unknown",
+                            QuoteId = 380,
+                            Speaker = "Lucille",
                             Text = "The doctor said I couldn't be a mother now if I tried"
                         },
                         new
                         {
-                            QuoteId = 382,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 381,
+                            Speaker = "Lindsay",
                             Text = "I'm much, much, much older than 15"
                         },
                         new
                         {
-                            QuoteId = 383,
-                            NumberOfWords = 9,
+                            QuoteId = 382,
                             Speaker = "Unknown",
                             Text = "And the worst part is he thinks he's passing"
                         },
                         new
                         {
-                            QuoteId = 384,
-                            NumberOfWords = 8,
+                            QuoteId = 383,
                             Speaker = "Unknown",
                             Text = "Wow, that does sound like a little girl"
                         },
                         new
                         {
-                            QuoteId = 385,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 384,
+                            Speaker = "Barry",
                             Text = "I'm going for a hot Ding Dong"
                         },
                         new
                         {
-                            QuoteId = 386,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 385,
+                            Speaker = "Lindsay",
                             Text = "She said “tingling” like 75 times"
                         },
                         new
                         {
-                            QuoteId = 387,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 386,
+                            Speaker = "Lucille",
                             Text = "You smell like a pine cone"
                         },
                         new
                         {
-                            QuoteId = 388,
-                            NumberOfWords = 4,
+                            QuoteId = 387,
                             Speaker = "Unknown",
                             Text = "I'm on bad mushrooms"
                         },
                         new
                         {
-                            QuoteId = 389,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 388,
+                            Speaker = "Barry",
                             Text = "This close, they always look like landscape"
                         },
                         new
                         {
-                            QuoteId = 390,
-                            NumberOfWords = 5,
+                            QuoteId = 389,
                             Speaker = "Unknown",
                             Text = "There were cutoffs up here?"
                         },
                         new
                         {
-                            QuoteId = 391,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 390,
+                            Speaker = "Lucille",
                             Text = "What are you doing with Mother's rape horn?"
                         },
                         new
                         {
-                            QuoteId = 392,
-                            NumberOfWords = 18,
-                            Speaker = "Unknown",
+                            QuoteId = 391,
+                            Speaker = "Michael",
                             Text = "Do you want to steer, or are you too old to sit on your pop's lap and drive?"
                         },
                         new
                         {
-                            QuoteId = 393,
-                            NumberOfWords = 5,
+                            QuoteId = 392,
                             Speaker = "Unknown",
                             Text = "They impounded my humble trailer"
                         },
                         new
                         {
-                            QuoteId = 394,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 393,
+                            Speaker = "Barry",
                             Text = "Does this look contagious to you?"
                         },
                         new
                         {
-                            QuoteId = 395,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 394,
+                            Speaker = "Tobias",
                             Text = "Nice to be back in a queen"
                         },
                         new
                         {
-                            QuoteId = 396,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 395,
+                            Speaker = "Tobias",
                             Text = "Let the great experiment begin"
                         },
                         new
                         {
-                            QuoteId = 397,
-                            NumberOfWords = 10,
-                            Speaker = "Unknown",
+                            QuoteId = 396,
+                            Speaker = "Michael",
                             Text = "There's got to be a better way to say that"
                         },
                         new
                         {
-                            QuoteId = 398,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 397,
+                            Speaker = "GeorgeSenior",
                             Text = "I am having the time of my life"
                         },
                         new
                         {
-                            QuoteId = 399,
-                            NumberOfWords = 4,
-                            Speaker = "Unknown",
+                            QuoteId = 398,
+                            Speaker = "Michael",
                             Text = "I haven't met Ann"
                         },
                         new
                         {
-                            QuoteId = 400,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 399,
+                            Speaker = "GeorgeMichael",
                             Text = "I kind of want to buy her a diamond"
                         },
                         new
                         {
-                            QuoteId = 401,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 400,
+                            Speaker = "Michael",
                             Text = "I'm sure that Egg is a very nice person"
                         },
                         new
                         {
-                            QuoteId = 402,
-                            NumberOfWords = 4,
-                            Speaker = "Unknown",
+                            QuoteId = 401,
+                            Speaker = "Buster",
                             Text = "I heard zoo noises"
                         },
                         new
                         {
-                            QuoteId = 403,
-                            NumberOfWords = 6,
+                            QuoteId = 402,
                             Speaker = "Unknown",
                             Text = "Which pinky do you use less?"
                         },
                         new
                         {
-                            QuoteId = 404,
-                            NumberOfWords = 4,
-                            Speaker = "Unknown",
+                            QuoteId = 403,
+                            Speaker = "GOB",
                             Text = "Nothing on the inside"
                         },
                         new
                         {
-                            QuoteId = 405,
-                            NumberOfWords = 19,
-                            Speaker = "Unknown",
+                            QuoteId = 404,
+                            Speaker = "Lindsay",
                             Text = "I'm not proud of the way I was so grossed out when I found out you were gross before"
                         },
                         new
                         {
-                            QuoteId = 406,
-                            NumberOfWords = 15,
-                            Speaker = "Unknown",
+                            QuoteId = 405,
+                            Speaker = "Buster",
                             Text = "I'm just hoping to get mildly injured so I can get out of the Army"
                         },
                         new
                         {
-                            QuoteId = 407,
-                            NumberOfWords = 6,
+                            QuoteId = 406,
                             Speaker = "Unknown",
                             Text = "I think my nipples are bleeding"
                         },
                         new
                         {
-                            QuoteId = 408,
-                            NumberOfWords = 3,
+                            QuoteId = 407,
                             Speaker = "Unknown",
                             Text = "Flashes of Quincy"
                         },
                         new
                         {
-                            QuoteId = 409,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 408,
+                            Speaker = "GOB",
                             Text = "I think the plant lady's wearing a thong"
                         },
                         new
                         {
-                            QuoteId = 410,
-                            NumberOfWords = 6,
+                            QuoteId = 409,
                             Speaker = "Unknown",
                             Text = "Don't be such an Ann hog"
                         },
                         new
                         {
-                            QuoteId = 411,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 410,
+                            Speaker = "Lucille",
                             Text = "Go see a Star War"
                         },
                         new
                         {
-                            QuoteId = 412,
-                            NumberOfWords = 6,
+                            QuoteId = 411,
                             Speaker = "Unknown",
                             Text = "Why am I not blacking out?"
                         },
                         new
                         {
-                            QuoteId = 413,
-                            NumberOfWords = 5,
+                            QuoteId = 412,
                             Speaker = "Unknown",
                             Text = "He swore by that Glisten"
                         },
                         new
                         {
-                            QuoteId = 414,
-                            NumberOfWords = 6,
+                            QuoteId = 413,
                             Speaker = "Unknown",
                             Text = "Let's go dig up your uncle"
                         },
                         new
                         {
-                            QuoteId = 415,
-                            NumberOfWords = 20,
-                            Speaker = "Tobias",
+                            QuoteId = 414,
+                            Speaker = "Unknown",
                             Text = "I will be head to toe in blue makeup until 8:01 in case the Blue Man Group needs their understudy"
                         },
                         new
                         {
-                            QuoteId = 416,
-                            NumberOfWords = 4,
+                            QuoteId = 415,
                             Speaker = "Unknown",
                             Text = "Are we having yams?"
                         },
                         new
                         {
-                            QuoteId = 418,
-                            NumberOfWords = 13,
+                            QuoteId = 416,
+                            Speaker = "Unknown",
+                            Text = "First I blow him, then I poke him"
+                        },
+                        new
+                        {
+                            QuoteId = 417,
                             Speaker = "Unknown",
                             Text = "I don't think we need people trying to compete with what I'm wearing"
                         },
                         new
                         {
-                            QuoteId = 419,
-                            NumberOfWords = 8,
+                            QuoteId = 418,
                             Speaker = "Unknown",
                             Text = "Don't ask me, I'm just the boy's father"
                         },
                         new
                         {
-                            QuoteId = 420,
-                            NumberOfWords = 14,
+                            QuoteId = 419,
                             Speaker = "Lucille",
                             Text = "No one would believe that a woman like me would have a gay son"
                         },
                         new
                         {
-                            QuoteId = 421,
-                            NumberOfWords = 8,
-                            Speaker = "GeorgeMichael",
+                            QuoteId = 420,
+                            Speaker = "Unknown",
                             Text = "I can see marinating a chicken in that"
                         },
                         new
                         {
-                            QuoteId = 422,
-                            NumberOfWords = 11,
-                            Speaker = "GeorgeSenior",
+                            QuoteId = 421,
+                            Speaker = "Unknown",
                             Text = "Your Tweety Bird dance just cost us a run, you moron"
                         },
                         new
                         {
-                            QuoteId = 423,
-                            NumberOfWords = 12,
+                            QuoteId = 422,
                             Speaker = "GOB",
                             Text = "How do we filter out the teases? We don't let them in."
                         },
                         new
                         {
-                            QuoteId = 424,
-                            NumberOfWords = 6,
-                            Speaker = "Lucille2",
+                            QuoteId = 423,
+                            Speaker = "Unknown",
                             Text = "I am stable as a table"
                         },
                         new
                         {
-                            QuoteId = 425,
-                            NumberOfWords = 19,
-                            Speaker = "Buster",
+                            QuoteId = 424,
+                            Speaker = "Unknown",
                             Text = "I would hardly call my mother a girl, but yes, she's still very much a part of my life"
                         },
                         new
                         {
-                            QuoteId = 426,
-                            NumberOfWords = 5,
-                            Speaker = "Lucille2",
+                            QuoteId = 425,
+                            Speaker = "Unknown",
                             Text = "Everybody thinks they're Frank Sinatra"
                         },
                         new
                         {
-                            QuoteId = 427,
-                            NumberOfWords = 5,
-                            Speaker = "GOB",
+                            QuoteId = 426,
+                            Speaker = "Unknown",
                             Text = "They make me feel dressier"
                         },
                         new
                         {
-                            QuoteId = 428,
-                            NumberOfWords = 7,
+                            QuoteId = 427,
                             Speaker = "Unknown",
                             Text = "A piano could stand on those legs"
                         },
                         new
                         {
-                            QuoteId = 429,
-                            NumberOfWords = 6,
+                            QuoteId = 428,
                             Speaker = "GeorgeMichael",
                             Text = "Guess she didn't see the drawings"
                         },
                         new
                         {
-                            QuoteId = 430,
-                            NumberOfWords = 9,
+                            QuoteId = 429,
                             Speaker = "Unknown",
                             Text = "You have undone all of Dr. Sandor Plumb's work"
                         },
                         new
                         {
-                            QuoteId = 431,
-                            NumberOfWords = 16,
-                            Speaker = "Unknown",
+                            QuoteId = 430,
+                            Speaker = "Tobias",
                             Text = "I need to prove to her that I'm not just a man, but a man's man"
                         },
                         new
                         {
-                            QuoteId = 432,
-                            NumberOfWords = 9,
+                            QuoteId = 431,
                             Speaker = "Unknown",
                             Text = "Shall I put the Posturepedic in the down position?"
                         },
                         new
                         {
-                            QuoteId = 433,
-                            NumberOfWords = 5,
+                            QuoteId = 432,
                             Speaker = "Unknown",
                             Text = "Read me the appetizers again"
                         },
                         new
                         {
-                            QuoteId = 434,
-                            NumberOfWords = 10,
+                            QuoteId = 433,
                             Speaker = "Unknown",
                             Text = "Did you have too much club sauce on your calamari?"
                         },
                         new
                         {
-                            QuoteId = 435,
-                            NumberOfWords = 19,
-                            Speaker = "Unknown",
+                            QuoteId = 434,
+                            Speaker = "GeorgeSenior",
                             Text = "I tried to drink some of the water, and it was too hot and it tasted like soy sauce"
                         },
                         new
                         {
-                            QuoteId = 436,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 435,
+                            Speaker = "GeorgeSenior",
                             Text = "I think the teriyaki chicken burst"
                         },
                         new
                         {
-                            QuoteId = 437,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 436,
+                            Speaker = "GeorgeSenior",
                             Text = "This isn't turning into the party hangout I hoped"
                         },
                         new
                         {
-                            QuoteId = 438,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 437,
+                            Speaker = "Lindsay",
                             Text = "Stick a wrench in me, I'm done"
                         },
                         new
                         {
-                            QuoteId = 439,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 438,
+                            Speaker = "UncleJack",
                             Text = "Someone order 140 pounds of upper-body strength?"
                         },
                         new
                         {
-                            QuoteId = 440,
-                            NumberOfWords = 10,
-                            Speaker = "Unknown",
+                            QuoteId = 439,
+                            Speaker = "UncleJack",
                             Text = "It's just something the body does when you shake it"
                         },
                         new
                         {
-                            QuoteId = 441,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 440,
+                            Speaker = "Maeby",
                             Text = "Well, I'm all grown up now"
                         },
                         new
                         {
-                            QuoteId = 442,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 441,
+                            Speaker = "UncleJack",
                             Text = "How'd you like to take a nap, baldy?"
                         },
                         new
                         {
-                            QuoteId = 443,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 442,
+                            Speaker = "Michael",
                             Text = "Let's not spin in the comfy chair"
                         },
                         new
                         {
-                            QuoteId = 444,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 443,
+                            Speaker = "Barry",
                             Text = "I got Michael out of his marriage, didn't I?"
                         },
                         new
                         {
-                            QuoteId = 445,
-                            NumberOfWords = 3,
-                            Speaker = "Oscar",
+                            QuoteId = 444,
+                            Speaker = "Barry",
                             Text = "I need macaroons"
                         },
                         new
                         {
-                            QuoteId = 446,
-                            NumberOfWords = 14,
-                            Speaker = "Oscar",
+                            QuoteId = 445,
+                            Speaker = "Unknown",
                             Text = "You can win every argument like that, but that does not make you right"
                         },
                         new
                         {
-                            QuoteId = 447,
-                            NumberOfWords = 11,
+                            QuoteId = 446,
                             Speaker = "Unknown",
                             Text = "I really hate it when you put on the God costume"
                         },
                         new
                         {
-                            QuoteId = 448,
-                            NumberOfWords = 6,
-                            Speaker = "Buster",
+                            QuoteId = 447,
+                            Speaker = "Unknown",
                             Text = "I'm cloaking myself in her scent"
                         },
                         new
                         {
-                            QuoteId = 449,
-                            NumberOfWords = 13,
+                            QuoteId = 448,
                             Speaker = "Buster",
                             Text = "I was made to understand that there would be grilled cheese sandwiches here"
                         },
                         new
                         {
-                            QuoteId = 450,
-                            NumberOfWords = 12,
+                            QuoteId = 449,
                             Speaker = "Buster",
                             Text = "Will someone please have the decency to punch me in the face?"
                         },
                         new
                         {
-                            QuoteId = 451,
-                            NumberOfWords = 15,
+                            QuoteId = 450,
                             Speaker = "Buster",
                             Text = "Mom always taught us to curl up in a ball and remain motionless when confronted"
                         },
                         new
                         {
-                            QuoteId = 452,
-                            NumberOfWords = 4,
+                            QuoteId = 451,
                             Speaker = "Buster",
                             Text = "We have unlimited juice?"
                         },
                         new
                         {
-                            QuoteId = 454,
-                            NumberOfWords = 5,
+                            QuoteId = 453,
                             Speaker = "Unknown",
                             Text = "We all know you're Annyong"
                         },
                         new
                         {
-                            QuoteId = 455,
-                            NumberOfWords = 6,
+                            QuoteId = 454,
                             Speaker = "Buster",
                             Text = "No, Mother, I can blow myself"
                         },
                         new
                         {
-                            QuoteId = 456,
-                            NumberOfWords = 1,
-                            Speaker = "Unknown",
+                            QuoteId = 455,
+                            Speaker = "Michael",
                             Text = "Her?"
                         },
                         new
                         {
-                            QuoteId = 457,
-                            NumberOfWords = 8,
+                            QuoteId = 456,
                             Speaker = "Unknown",
                             Text = "She was made in a cup, like soup"
                         },
                         new
                         {
-                            QuoteId = 458,
-                            NumberOfWords = 9,
+                            QuoteId = 457,
                             Speaker = "Tobias",
                             Text = "Oh, I'm sorry, I forgot: your wife is dead"
                         },
                         new
                         {
-                            QuoteId = 459,
-                            NumberOfWords = 26,
+                            QuoteId = 458,
                             Speaker = "Unknown",
                             Text = "The one thing I will never do is not tell him that I'm taking him to a cabin in the woods and then not take him"
                         },
                         new
                         {
-                            QuoteId = 460,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 459,
+                            Speaker = "GeorgeSenior",
                             Text = "He was our miracle baby"
                         },
                         new
                         {
-                            QuoteId = 461,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 460,
+                            Speaker = "GOB",
                             Text = "It's like my heart is getting hard"
                         },
                         new
                         {
-                            QuoteId = 462,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 461,
+                            Speaker = "GOB",
                             Text = "I know what an erection feels like, Michael"
                         },
                         new
                         {
-                            QuoteId = 463,
-                            NumberOfWords = 4,
+                            QuoteId = 462,
                             Speaker = "Unknown",
                             Text = "Those aren't even birds"
                         },
                         new
                         {
-                            QuoteId = 464,
-                            NumberOfWords = 3,
-                            Speaker = "Unknown",
+                            QuoteId = 463,
+                            Speaker = "GOB",
                             Text = "But I'm white"
                         },
                         new
                         {
-                            QuoteId = 465,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 464,
+                            Speaker = "GOB",
                             Text = "It ain't easy being white"
                         },
                         new
                         {
-                            QuoteId = 466,
-                            NumberOfWords = 17,
-                            Speaker = "Unknown",
+                            QuoteId = 465,
+                            Speaker = "Buster",
                             Text = "I'm Mom and I want to shoot down everything you say so I feel good about myself"
                         },
                         new
                         {
-                            QuoteId = 467,
-                            NumberOfWords = 4,
+                            QuoteId = 466,
                             Speaker = "Unknown",
                             Text = "Lets deal some drugs"
                         },
                         new
                         {
-                            QuoteId = 468,
-                            NumberOfWords = 7,
+                            QuoteId = 467,
                             Speaker = "Unknown",
                             Text = "Why do you think I wear these?"
                         },
                         new
                         {
-                            QuoteId = 469,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 468,
+                            Speaker = "GOB",
                             Text = "A magician never reveals his secrets"
                         },
                         new
                         {
-                            QuoteId = 470,
-                            NumberOfWords = 5,
+                            QuoteId = 469,
                             Speaker = "Unknown",
                             Text = "When's that voice gonna drop?"
                         },
                         new
                         {
-                            QuoteId = 471,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 470,
+                            Speaker = "Maeby",
                             Text = "I'm gonna go get sexy"
                         },
                         new
                         {
-                            QuoteId = 472,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 471,
+                            Speaker = "Lucille",
                             Text = "They said he was some kind of scientist"
                         },
                         new
                         {
-                            QuoteId = 473,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 472,
+                            Speaker = "Michael",
                             Text = "Speaking of settling, How's Ann?"
                         },
                         new
                         {
-                            QuoteId = 474,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 473,
+                            Speaker = "GeorgeSenior",
                             Text = "It's hard to gauge time"
                         },
                         new
                         {
-                            QuoteId = 475,
-                            NumberOfWords = 6,
-                            Speaker = "Unknown",
+                            QuoteId = 474,
+                            Speaker = "GeorgeMichael",
                             Text = "I like the way they think"
                         },
                         new
                         {
-                            QuoteId = 476,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 475,
+                            Speaker = "GeorgeMichael",
                             Text = "I was hoping he would be gifted sexually"
                         },
                         new
                         {
-                            QuoteId = 477,
-                            NumberOfWords = 15,
-                            Speaker = "Unknown",
+                            QuoteId = 476,
+                            Speaker = "Tobias",
                             Text = "If this were a Lifetime Moment of Truth movie, this would be our act break"
                         },
                         new
                         {
-                            QuoteId = 478,
-                            NumberOfWords = 10,
+                            QuoteId = 477,
                             Speaker = "Unknown",
                             Text = "A flower in my garden, a mystery in my panties"
                         },
                         new
                         {
-                            QuoteId = 479,
-                            NumberOfWords = 7,
-                            Speaker = "Unknown",
+                            QuoteId = 478,
+                            Speaker = "Buster",
                             Text = "I'm a scholar. I enjoy scholarly pursuits"
                         },
                         new
                         {
-                            QuoteId = 480,
-                            NumberOfWords = 6,
+                            QuoteId = 479,
                             Speaker = "Unknown",
                             Text = "The warden could easily be black"
                         },
                         new
                         {
-                            QuoteId = 481,
-                            NumberOfWords = 8,
-                            Speaker = "Unknown",
+                            QuoteId = 480,
+                            Speaker = "Tobias",
                             Text = "Who is this shiny building of a man?"
                         },
                         new
                         {
-                            QuoteId = 482,
-                            NumberOfWords = 3,
-                            Speaker = "Unknown",
+                            QuoteId = 481,
+                            Speaker = "Buster",
                             Text = "Chickens don't clap"
                         },
                         new
                         {
-                            QuoteId = 483,
-                            NumberOfWords = 15,
+                            QuoteId = 482,
                             Speaker = "Unknown",
                             Text = "I've got a stair car full of Mexican laborers that would love a day's work"
                         },
                         new
                         {
-                            QuoteId = 484,
-                            NumberOfWords = 3,
+                            QuoteId = 483,
                             Speaker = "Unknown",
                             Text = "Are beads cheap?"
                         },
                         new
                         {
-                            QuoteId = 485,
-                            NumberOfWords = 7,
+                            QuoteId = 484,
                             Speaker = "Unknown",
                             Text = "We'll see who brings in more honey"
                         },
                         new
                         {
-                            QuoteId = 486,
-                            NumberOfWords = 5,
-                            Speaker = "Unknown",
+                            QuoteId = 485,
+                            Speaker = "Michael",
                             Text = "He's thinking about bees again"
                         },
                         new
                         {
-                            QuoteId = 487,
-                            NumberOfWords = 22,
+                            QuoteId = 486,
                             Speaker = "Unknown",
                             Text = "We're going to have to figure out something to do so that people can look at you without wanting to kill themselves"
                         },
                         new
                         {
-                            QuoteId = 488,
-                            NumberOfWords = 9,
-                            Speaker = "Unknown",
+                            QuoteId = 487,
+                            Speaker = "GOB",
                             Text = "You don’t know a good bird hospital, do you?"
+                        },
+                        new
+                        {
+                            QuoteId = 488,
+                            Speaker = "GOB",
+                            Text = "Hair up, glasses off"
                         });
                 });
 #pragma warning restore 612, 618

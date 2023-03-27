@@ -2,6 +2,7 @@
 using ArrestedDevelopmentApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ArrestedDevelopmentApi.Migrations
 {
     [DbContext(typeof(ArrestedDevelopmentApiContext))]
-    partial class ArrestedDevelopmentApiContextModelSnapshot : ModelSnapshot
+    [Migration("20230327212632_AddNumWords")]
+    partial class AddNumWords
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,7 +44,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 1,
                             NumberOfWords = 4,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "Hair up, glasses off"
                         },
                         new
@@ -56,14 +58,14 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 3,
                             NumberOfWords = 8,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "What do you expect, Mother? I'm half machine!"
                         },
                         new
                         {
                             QuoteId = 4,
                             NumberOfWords = 3,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "I'm a monster!"
                         },
                         new
@@ -84,7 +86,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 7,
                             NumberOfWords = 10,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "I didn't even know we were calling him Big Bear"
                         },
                         new
@@ -98,21 +100,21 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 9,
                             NumberOfWords = 6,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "Did you see the new Poof?"
                         },
                         new
                         {
                             QuoteId = 10,
                             NumberOfWords = 7,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "I love all of my children equally"
                         },
                         new
                         {
                             QuoteId = 11,
                             NumberOfWords = 9,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "No one's called him Baby Buster since high school"
                         },
                         new
@@ -133,7 +135,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 14,
                             NumberOfWords = 9,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "This party is going to be off the hook"
                         },
                         new
@@ -147,21 +149,21 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 16,
                             NumberOfWords = 7,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "Like anyone would want to \"R\" her"
                         },
                         new
                         {
                             QuoteId = 17,
                             NumberOfWords = 11,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "Can't a guy call his mother pretty without it seeming strange?"
                         },
                         new
                         {
                             QuoteId = 18,
                             NumberOfWords = 10,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "This is the best free scrapbooking class I've ever taken"
                         },
                         new
@@ -175,7 +177,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 20,
                             NumberOfWords = 11,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "I'm going to run this through again on \"pots and pans\""
                         },
                         new
@@ -189,21 +191,21 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 22,
                             NumberOfWords = 16,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I will be a bigger and hairier mole than the one on your inner left thigh"
                         },
                         new
                         {
                             QuoteId = 23,
                             NumberOfWords = 15,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "I want to cry so bad, but I don't think I can spare the moisture"
                         },
                         new
                         {
                             QuoteId = 24,
                             NumberOfWords = 7,
-                            Speaker = "GeorgeMichael",
+                            Speaker = "Unknown",
                             Text = "Maybe it was the other George Michael"
                         },
                         new
@@ -217,42 +219,42 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 26,
                             NumberOfWords = 12,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "It's so watery, and yet there's a smack of ham to it"
                         },
                         new
                         {
                             QuoteId = 27,
                             NumberOfWords = 12,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "The seal is for marksmanship, and the gorilla is for sand racing"
                         },
                         new
                         {
                             QuoteId = 28,
                             NumberOfWords = 13,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "After all these years, God's not going to take a call from you"
                         },
                         new
                         {
                             QuoteId = 29,
                             NumberOfWords = 13,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "You mean the guy we're meeting with can't even grow his own hair?"
                         },
                         new
                         {
                             QuoteId = 30,
                             NumberOfWords = 9,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I thought the two of us could talk man-on-man"
                         },
                         new
                         {
                             QuoteId = 31,
                             NumberOfWords = 23,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I spent so much time making sweet love on my wife that it's hard to hear anything over the clatter of her breasts"
                         },
                         new
@@ -280,49 +282,49 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 35,
                             NumberOfWords = 10,
-                            Speaker = "Lindsay",
+                            Speaker = "Unknown",
                             Text = "Wine only turns to alcohol if you let it sit"
                         },
                         new
                         {
                             QuoteId = 36,
                             NumberOfWords = 11,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I see you've wasted no time in filling my seat hole"
                         },
                         new
                         {
                             QuoteId = 37,
                             NumberOfWords = 15,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "I'm going to buy you the single healthiest call girl this town has ever seen"
                         },
                         new
                         {
                             QuoteId = 38,
                             NumberOfWords = 4,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "Turn this skiff around"
                         },
                         new
                         {
                             QuoteId = 39,
                             NumberOfWords = 9,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "I never thought I'd miss a hand so much"
                         },
                         new
                         {
                             QuoteId = 40,
                             NumberOfWords = 12,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I can just taste those meaty leading man parts in my mouth."
                         },
                         new
                         {
                             QuoteId = 41,
                             NumberOfWords = 8,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "Everyone's laughing and riding and cornholing except Buster"
                         },
                         new
@@ -336,91 +338,91 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 43,
                             NumberOfWords = 15,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "Let me take off my assistant's skirt and put on my Barbra-Streisand-in-The-Prince-of-Tides ass-masking therapist pantsuit"
                         },
                         new
                         {
                             QuoteId = 44,
                             NumberOfWords = 9,
-                            Speaker = "Franklin",
+                            Speaker = "Unknown",
                             Text = "I don't want no part of yo tight-ass country-club"
                         },
                         new
                         {
                             QuoteId = 45,
                             NumberOfWords = 6,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "Don't leave your Uncle T-Bag hanging"
                         },
                         new
                         {
                             QuoteId = 46,
                             NumberOfWords = 10,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "What have we always said is the most important thing?"
                         },
                         new
                         {
                             QuoteId = 47,
                             NumberOfWords = 8,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "We're just blowing through nap time, aren't we?"
                         },
                         new
                         {
                             QuoteId = 48,
                             NumberOfWords = 8,
-                            Speaker = "Franklin",
+                            Speaker = "Unknown",
                             Text = "Let me give that oatmeal some brown sugar"
                         },
                         new
                         {
                             QuoteId = 49,
                             NumberOfWords = 12,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "A sea of waiters and no one will take a drink order"
                         },
                         new
                         {
                             QuoteId = 50,
                             NumberOfWords = 3,
-                            Speaker = "Barry",
+                            Speaker = "Unknown",
                             Text = "Those are balls"
                         },
                         new
                         {
                             QuoteId = 51,
                             NumberOfWords = 11,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I'm gonna build me an airport, put my name on it"
                         },
                         new
                         {
                             QuoteId = 52,
                             NumberOfWords = 5,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "Let me out that queen"
                         },
                         new
                         {
                             QuoteId = 53,
                             NumberOfWords = 6,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "Do these effectively hide my thunder?"
                         },
                         new
                         {
                             QuoteId = 54,
                             NumberOfWords = 21,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "You just grab that brownish area by its points and you don't let go no matter what your mother tells you"
                         },
                         new
                         {
                             QuoteId = 55,
                             NumberOfWords = 7,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I guess you can say I'm buy-curious"
                         },
                         new
@@ -434,175 +436,175 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 57,
                             NumberOfWords = 20,
-                            Speaker = "GeorgeMichael",
+                            Speaker = "Unknown",
                             Text = "I could use a leather jacket for when I'm on my hog and have to go into a controlled slide"
                         },
                         new
                         {
                             QuoteId = 58,
                             NumberOfWords = 8,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "Are you at all concerned about an uprising?"
                         },
                         new
                         {
                             QuoteId = 59,
                             NumberOfWords = 8,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "In the dark, it all looks the same"
                         },
                         new
                         {
                             QuoteId = 60,
                             NumberOfWords = 15,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "Look at us, crying like a bunch of girls on the last day of camp"
                         },
                         new
                         {
                             QuoteId = 61,
                             NumberOfWords = 12,
-                            Speaker = "GeorgeSenior",
+                            Speaker = "Unknown",
                             Text = "You just made a fool out of yourself in front of T-Bone"
                         },
                         new
                         {
                             QuoteId = 62,
                             NumberOfWords = 11,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "I hope you also carry a spare bowl of candy beans"
                         },
                         new
                         {
                             QuoteId = 63,
                             NumberOfWords = 9,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "You can't just comb that out and reset it?"
                         },
                         new
                         {
                             QuoteId = 64,
                             NumberOfWords = 8,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "Look what the homosexuals have done to me"
                         },
                         new
                         {
                             QuoteId = 65,
                             NumberOfWords = 18,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "Everything they do is so dramatic and flamboyant, it just makes me want to set myself on fire"
                         },
                         new
                         {
                             QuoteId = 66,
                             NumberOfWords = 7,
-                            Speaker = "GeorgeSenior",
+                            Speaker = "Unknown",
                             Text = "I may have committed some light treason"
                         },
                         new
                         {
                             QuoteId = 67,
                             NumberOfWords = 11,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "I don't understand the question and I won't respond to it"
                         },
                         new
                         {
                             QuoteId = 68,
                             NumberOfWords = 7,
-                            Speaker = "GeorgeSenior",
+                            Speaker = "Unknown",
                             Text = "There's always money in the banana stand"
                         },
                         new
                         {
                             QuoteId = 69,
                             NumberOfWords = 20,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "In this business of show, you have to have the heart of an angel and the hyde of an elephant"
                         },
                         new
                         {
                             QuoteId = 70,
                             NumberOfWords = 18,
-                            Speaker = "GeorgeSenior",
+                            Speaker = "Unknown",
                             Text = "Too many lives have been ruined because some cheap waitress at a HoJo said she used an I.U.D."
                         },
                         new
                         {
                             QuoteId = 71,
                             NumberOfWords = 12,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "Do you think I could have a hit of that juice box?"
                         },
                         new
                         {
                             QuoteId = 72,
                             NumberOfWords = 12,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "Suddenly he's too much of a big shot to brush Mother's hair"
                         },
                         new
                         {
                             QuoteId = 73,
                             NumberOfWords = 5,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "It walked on my pillow"
                         },
                         new
                         {
                             QuoteId = 74,
                             NumberOfWords = 4,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "That's not a spinner"
                         },
                         new
                         {
                             QuoteId = 75,
                             NumberOfWords = 9,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "I thought I saw a graham cracker out there"
                         },
                         new
                         {
                             QuoteId = 76,
                             NumberOfWords = 8,
-                            Speaker = "CarlWeathers",
+                            Speaker = "Unknown",
                             Text = "There's still plenty of meat on that bone"
                         },
                         new
                         {
                             QuoteId = 77,
                             NumberOfWords = 15,
-                            Speaker = "CarlWeathers",
+                            Speaker = "Unknown",
                             Text = "Now you take this home, throw it in a pot, add some broth, a potato"
                         },
                         new
                         {
                             QuoteId = 78,
                             NumberOfWords = 21,
-                            Speaker = "CarlWeathers",
-                            Text = "Baby, you got a stew going"
+                            Speaker = "Unknown",
+                            Text = "You take this home, throw it in a pot, add some broth, a potato — baby, you got a stew going"
                         },
                         new
                         {
                             QuoteId = 79,
                             NumberOfWords = 6,
-                            Speaker = "CarlWeathers",
+                            Speaker = "Unknown",
                             Text = "Never once touched my per diem"
                         },
                         new
                         {
                             QuoteId = 80,
                             NumberOfWords = 5,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "Army had a half day"
                         },
                         new
                         {
                             QuoteId = 81,
                             NumberOfWords = 16,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "The mere fact that you call making love \"pop pop\" tells me that you're not ready"
                         },
                         new
@@ -616,35 +618,35 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 83,
                             NumberOfWords = 5,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "There are dozens of us"
                         },
                         new
                         {
                             QuoteId = 84,
                             NumberOfWords = 12,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "I think you're going to be surprised at some of your phrasing"
                         },
                         new
                         {
                             QuoteId = 85,
                             NumberOfWords = 7,
-                            Speaker = "GeorgeSenior",
+                            Speaker = "Unknown",
                             Text = "Stop licking my hand, you horse's ass"
                         },
                         new
                         {
                             QuoteId = 86,
                             NumberOfWords = 6,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I'm afraid I just blue myself"
                         },
                         new
                         {
                             QuoteId = 87,
                             NumberOfWords = 12,
-                            Speaker = "Lindsay",
+                            Speaker = "Unknown",
                             Text = "Why don't we just take an ad out in \"I'm Poor\" magazine?"
                         },
                         new
@@ -672,35 +674,35 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 91,
                             NumberOfWords = 13,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "It just seems like there's still light coming in from under the door"
                         },
                         new
                         {
                             QuoteId = 92,
                             NumberOfWords = 6,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "I'm leaving my mother for you"
                         },
                         new
                         {
                             QuoteId = 93,
                             NumberOfWords = 4,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "You're replacing my mother"
                         },
                         new
                         {
                             QuoteId = 94,
                             NumberOfWords = 13,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "Even if it means me taking a chubby, I will suck it up"
                         },
                         new
                         {
                             QuoteId = 95,
                             NumberOfWords = 12,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "If she's not going to say anything, I certainly can't help her"
                         },
                         new
@@ -721,7 +723,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 98,
                             NumberOfWords = 9,
-                            Speaker = "SteveHolt",
+                            Speaker = "Unknown",
                             Text = "Is that what's going to happen to my hair?"
                         },
                         new
@@ -749,42 +751,49 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 102,
                             NumberOfWords = 6,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "Perhaps an attic shall I seek"
+                        },
+                        new
+                        {
+                            QuoteId = 103,
+                            NumberOfWords = 5,
+                            Speaker = "Unknown",
+                            Text = "Don't call my escorts whores"
                         },
                         new
                         {
                             QuoteId = 104,
                             NumberOfWords = 5,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "He's definitely got a type"
                         },
                         new
                         {
                             QuoteId = 105,
                             NumberOfWords = 5,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "That's my son, you pothead"
                         },
                         new
                         {
                             QuoteId = 106,
                             NumberOfWords = 4,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "God knows they're squinters"
                         },
                         new
                         {
                             QuoteId = 107,
                             NumberOfWords = 12,
-                            Speaker = "Rita",
+                            Speaker = "Unknown",
                             Text = "Instead of making houses, maybe you should make land on the ocean"
                         },
                         new
                         {
                             QuoteId = 108,
                             NumberOfWords = 12,
-                            Speaker = "Rita",
+                            Speaker = "Unknown",
                             Text = "Maybe you're not smart either. I didn't know until they told me"
                         },
                         new
@@ -819,35 +828,35 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 113,
                             NumberOfWords = 10,
-                            Speaker = "Oscar",
+                            Speaker = "Unknown",
                             Text = "Why can't I have hair and money and him nothing?"
                         },
                         new
                         {
                             QuoteId = 114,
                             NumberOfWords = 7,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "There's the woman I'm sexually attracted to"
                         },
                         new
                         {
                             QuoteId = 115,
                             NumberOfWords = 5,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "I was trained by Army"
                         },
                         new
                         {
                             QuoteId = 116,
                             NumberOfWords = 14,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I don't want to blame it all on 9/11, but it certainly didn't help"
                         },
                         new
                         {
                             QuoteId = 117,
                             NumberOfWords = 1,
-                            Speaker = "Annyong",
+                            Speaker = "Unknown",
                             Text = "Annyong"
                         },
                         new
@@ -868,7 +877,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 120,
                             NumberOfWords = 10,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "You can sink your arrow into my buttocks any time"
                         },
                         new
@@ -882,56 +891,63 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 122,
                             NumberOfWords = 9,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I wouldn't mind kissing that man between the cheeks"
                         },
                         new
                         {
                             QuoteId = 123,
                             NumberOfWords = 4,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "Are those police boats?"
+                        },
+                        new
+                        {
+                            QuoteId = 124,
+                            NumberOfWords = 9,
+                            Speaker = "Unknown",
+                            Text = "A trick is something a whore does for money"
                         },
                         new
                         {
                             QuoteId = 125,
                             NumberOfWords = 2,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "Illusions, Michael"
                         },
                         new
                         {
                             QuoteId = 126,
                             NumberOfWords = 7,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "Clearly the blue part is the land"
                         },
                         new
                         {
                             QuoteId = 127,
                             NumberOfWords = 6,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "I don't know what I expected"
                         },
                         new
                         {
                             QuoteId = 128,
                             NumberOfWords = 1,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "Huzzah!"
                         },
                         new
                         {
                             QuoteId = 129,
                             NumberOfWords = 4,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "It's a wonderful restaurant"
                         },
                         new
                         {
                             QuoteId = 130,
                             NumberOfWords = 8,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "Why are you squeezing me with your body?"
                         },
                         new
@@ -952,49 +968,49 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 133,
                             NumberOfWords = 6,
-                            Speaker = "Lindsay",
+                            Speaker = "Unknown",
                             Text = "Say something that will terrify me"
                         },
                         new
                         {
                             QuoteId = 134,
                             NumberOfWords = 13,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "I'll buy you a hundred George Michaels that you can teach to drive"
                         },
                         new
                         {
                             QuoteId = 135,
                             NumberOfWords = 6,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "I should be in this Poof"
                         },
                         new
                         {
                             QuoteId = 136,
                             NumberOfWords = 4,
-                            Speaker = "TonyWonder",
+                            Speaker = "Unknown",
                             Text = "Did somebody say Wonder?"
                         },
                         new
                         {
                             QuoteId = 137,
                             NumberOfWords = 5,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "She turns illusions for money"
                         },
                         new
                         {
                             QuoteId = 138,
                             NumberOfWords = 17,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "Everything I've said about you can be covered with makeup and a lie about a thyroid problem"
                         },
                         new
                         {
                             QuoteId = 139,
                             NumberOfWords = 7,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "He just wants to see boys' Linuses"
                         },
                         new
@@ -1036,36 +1052,50 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 145,
                             NumberOfWords = 6,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "They even touched my Charlie Browns"
                         },
                         new
                         {
                             QuoteId = 146,
                             NumberOfWords = 4,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "It's tired in here"
                         },
                         new
                         {
                             QuoteId = 147,
                             NumberOfWords = 7,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "Make love in your own hand, mother"
                         },
                         new
                         {
                             QuoteId = 148,
                             NumberOfWords = 5,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "Sometimes love should be terrifying"
                         },
                         new
                         {
                             QuoteId = 149,
                             NumberOfWords = 14,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "My Army training tells me that this is going to be a hot mission"
+                        },
+                        new
+                        {
+                            QuoteId = 150,
+                            NumberOfWords = 4,
+                            Speaker = "Unknown",
+                            Text = "I don't date whores"
+                        },
+                        new
+                        {
+                            QuoteId = 151,
+                            NumberOfWords = 5,
+                            Speaker = "Unknown",
+                            Text = "It's just mom and whores"
                         },
                         new
                         {
@@ -1351,21 +1381,21 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 192,
                             NumberOfWords = 14,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "The guy runs a prison; he can have any piece of ass he wants"
                         },
                         new
                         {
                             QuoteId = 193,
                             NumberOfWords = 6,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "Who's the \"her\" in that sentence?"
                         },
                         new
                         {
                             QuoteId = 194,
                             NumberOfWords = 5,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "Please don't call yourself that"
                         },
                         new
@@ -1379,49 +1409,56 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 196,
                             NumberOfWords = 12,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "I'm not going to spend this kind of money and not watch"
                         },
                         new
                         {
                             QuoteId = 197,
                             NumberOfWords = 6,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "He showers her with club sauce"
                         },
                         new
                         {
                             QuoteId = 198,
                             NumberOfWords = 13,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "You've never told me how many houses there are in the British Parliament"
+                        },
+                        new
+                        {
+                            QuoteId = 199,
+                            NumberOfWords = 10,
+                            Speaker = "Unknown",
+                            Text = "I think we could be more than just gym buddies"
                         },
                         new
                         {
                             QuoteId = 200,
                             NumberOfWords = 5,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "You're blowing my mind, Frank"
                         },
                         new
                         {
                             QuoteId = 201,
                             NumberOfWords = 5,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "The whole backside has moles"
                         },
                         new
                         {
                             QuoteId = 202,
                             NumberOfWords = 5,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "There's no \"I\" in \"win\""
                         },
                         new
                         {
                             QuoteId = 203,
                             NumberOfWords = 5,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "Within her lies a queen"
                         },
                         new
@@ -1433,10 +1470,31 @@ namespace ArrestedDevelopmentApi.Migrations
                         },
                         new
                         {
+                            QuoteId = 205,
+                            NumberOfWords = 12,
+                            Speaker = "Unknown",
+                            Text = "I ought to pull down your pants and spank your ass raw"
+                        },
+                        new
+                        {
                             QuoteId = 206,
                             NumberOfWords = 12,
-                            Speaker = "BobLoblaw",
+                            Speaker = "Unknown",
                             Text = "Why should you go to jail for a crime someone else noticed?"
+                        },
+                        new
+                        {
+                            QuoteId = 207,
+                            NumberOfWords = 11,
+                            Speaker = "Unknown",
+                            Text = "I was a professional twice over: an analyst and a therapist"
+                        },
+                        new
+                        {
+                            QuoteId = 208,
+                            NumberOfWords = 4,
+                            Speaker = "Unknown",
+                            Text = "The world's first analrapist"
                         },
                         new
                         {
@@ -1456,14 +1514,14 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 211,
                             NumberOfWords = 6,
-                            Speaker = "Michael",
+                            Speaker = "Unknown",
                             Text = "I almost had Pop-Pop in Reno"
                         },
                         new
                         {
                             QuoteId = 212,
                             NumberOfWords = 11,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "If this tableau I recreate, perhaps I can re-snare my mate"
                         },
                         new
@@ -1477,28 +1535,28 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 214,
                             NumberOfWords = 17,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "We were both waiting for our dads at that garden where the little boy found the arm"
                         },
                         new
                         {
                             QuoteId = 215,
                             NumberOfWords = 12,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "I kind of feel like that kid who found the severed hand"
                         },
                         new
                         {
                             QuoteId = 216,
                             NumberOfWords = 6,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "I don't see you crying, robot"
                         },
                         new
                         {
                             QuoteId = 217,
                             NumberOfWords = 4,
-                            Speaker = "Kitty",
+                            Speaker = "Unknown",
                             Text = "Say goodbye to these"
                         },
                         new
@@ -1510,23 +1568,30 @@ namespace ArrestedDevelopmentApi.Migrations
                         },
                         new
                         {
+                            QuoteId = 219,
+                            NumberOfWords = 12,
+                            Speaker = "Unknown",
+                            Text = "Nobody sells any coke in this pen without daddy getting a taste"
+                        },
+                        new
+                        {
                             QuoteId = 220,
                             NumberOfWords = 13,
-                            Speaker = "Oscar",
+                            Speaker = "Unknown",
                             Text = "You haven't seen a little box with a turtle on it, have you?"
                         },
                         new
                         {
                             QuoteId = 221,
                             NumberOfWords = 14,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "My turtle was living in it before he ate all the grass and died"
                         },
                         new
                         {
                             QuoteId = 222,
                             NumberOfWords = 5,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "The scabs come right off"
                         },
                         new
@@ -1540,42 +1605,42 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 224,
                             NumberOfWords = 10,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "People hear the name Tobias, they think big black guy"
                         },
                         new
                         {
                             QuoteId = 225,
                             NumberOfWords = 16,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "I just don't want people's kids getting their sticky little fingers all over these $2,600 pants"
                         },
                         new
                         {
                             QuoteId = 226,
                             NumberOfWords = 25,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "The guy who's dirty dancing with his niece is going to tell the guy in the $3,600 suit how to run the business. Come on"
                         },
                         new
                         {
                             QuoteId = 227,
                             NumberOfWords = 8,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "Suddenly playing with yourself is a scholarly pursuit"
                         },
                         new
                         {
                             QuoteId = 228,
                             NumberOfWords = 14,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "If I wanted something your thumb touched, I'd eat the inside of your ear"
                         },
                         new
                         {
                             QuoteId = 229,
                             NumberOfWords = 7,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "You let him go in the sun?"
                         },
                         new
@@ -1589,28 +1654,28 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 231,
                             NumberOfWords = 24,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I will pack your sweet pink mouth with so much ice cream you'll be the envy of every Jerry and Jane on the block"
                         },
                         new
                         {
                             QuoteId = 232,
                             NumberOfWords = 11,
-                            Speaker = "GeorgeSenior",
+                            Speaker = "Unknown",
                             Text = "I am having a love affair with this ice cream sandwich"
                         },
                         new
                         {
                             QuoteId = 233,
                             NumberOfWords = 6,
-                            Speaker = "GeorgeSenior",
+                            Speaker = "Unknown",
                             Text = "Did you stick it to her?"
                         },
                         new
                         {
                             QuoteId = 234,
                             NumberOfWords = 4,
-                            Speaker = "GeorgeSenior",
+                            Speaker = "Unknown",
                             Text = "Pop-Pop needs your hair"
                         },
                         new
@@ -1638,7 +1703,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 238,
                             NumberOfWords = 10,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "We shan't be telling your mother about this, shan't we?"
                         },
                         new
@@ -1652,70 +1717,70 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 240,
                             NumberOfWords = 7,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "I'll leave when I'm good and ready"
                         },
                         new
                         {
                             QuoteId = 241,
                             NumberOfWords = 12,
-                            Speaker = "Maeby",
+                            Speaker = "Unknown",
                             Text = "I need one of those necklaces in the shape of a T"
                         },
                         new
                         {
                             QuoteId = 242,
                             NumberOfWords = 8,
-                            Speaker = "Lindsay",
+                            Speaker = "Unknown",
                             Text = "There's a cream with real diamonds in it"
                         },
                         new
                         {
                             QuoteId = 243,
                             NumberOfWords = 5,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "You, sir, are a mouthful"
                         },
                         new
                         {
                             QuoteId = 244,
                             NumberOfWords = 15,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "If I can't find a horny immigrant by then, I don't deserve to stay here"
                         },
                         new
                         {
                             QuoteId = 245,
                             NumberOfWords = 17,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "There's a man inside me, and only when he's finally out can I walk free of pain"
                         },
                         new
                         {
                             QuoteId = 246,
                             NumberOfWords = 32,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I'm afraid I prematurely shot my wad on what was supposed to be a \"dry run\", if you will, so now I'm afraid I have something of a mess on my hands"
                         },
                         new
                         {
                             QuoteId = 247,
                             NumberOfWords = 5,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "I've made a huge mistake"
                         },
                         new
                         {
                             QuoteId = 248,
                             NumberOfWords = 16,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "You are playing adults with fully-formed libidos, not two young men playing grab-ass in the shower"
                         },
                         new
                         {
                             QuoteId = 249,
                             NumberOfWords = 13,
-                            Speaker = "GeorgeMichael",
+                            Speaker = "Unknown",
                             Text = "I can't go on a million bike rides whenever you want me to"
                         },
                         new
@@ -1729,21 +1794,21 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 251,
                             NumberOfWords = 8,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "It's like she gets off on being withholding"
                         },
                         new
                         {
                             QuoteId = 252,
                             NumberOfWords = 7,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "Look who's ragging on the old lady"
                         },
                         new
                         {
                             QuoteId = 253,
                             NumberOfWords = 5,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "Look at me, \"getting off\""
                         },
                         new
@@ -1757,14 +1822,14 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 255,
                             NumberOfWords = 4,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "This kind of agility?"
                         },
                         new
                         {
                             QuoteId = 256,
                             NumberOfWords = 17,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "Do you see me more as the respected dramatic actor or more of the beloved comic actor?"
                         },
                         new
@@ -1904,7 +1969,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 276,
                             NumberOfWords = 10,
-                            Speaker = "GeorgeMichael",
+                            Speaker = "Unknown",
                             Text = "I was going to smoke the marijuana like a cigarette"
                         },
                         new
@@ -1918,28 +1983,28 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 278,
                             NumberOfWords = 7,
-                            Speaker = "Barry",
+                            Speaker = "Unknown",
                             Text = "I think something laid eggs on me"
                         },
                         new
                         {
                             QuoteId = 279,
                             NumberOfWords = 17,
-                            Speaker = "Annyong",
+                            Speaker = "Unknown",
                             Text = "Mother say no carbohydrate for you if you ever going to get girlfriend that's not old lady"
                         },
                         new
                         {
                             QuoteId = 280,
                             NumberOfWords = 12,
-                            Speaker = "Annyong",
+                            Speaker = "Unknown",
                             Text = "Maybe we should kiss again to teach them a lesson about obvious"
                         },
                         new
                         {
                             QuoteId = 281,
                             NumberOfWords = 5,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "Look how he zips now"
                         },
                         new
@@ -1948,6 +2013,13 @@ namespace ArrestedDevelopmentApi.Migrations
                             NumberOfWords = 10,
                             Speaker = "Unknown",
                             Text = "I should have never taken the pumps out of here"
+                        },
+                        new
+                        {
+                            QuoteId = 283,
+                            NumberOfWords = 16,
+                            Speaker = "Unknown",
+                            Text = "You just can't deal with the fact that I've got a super-thin wife with huge cans"
                         },
                         new
                         {
@@ -1974,7 +2046,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 287,
                             NumberOfWords = 6,
-                            Speaker = "Franklin",
+                            Speaker = "Unknown",
                             Text = "I got children all over town"
                         },
                         new
@@ -2009,7 +2081,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 292,
                             NumberOfWords = 10,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "Franklin said some things Whitey just wasn't ready to hear"
                         },
                         new
@@ -2065,7 +2137,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 300,
                             NumberOfWords = 16,
-                            Speaker = "Ann",
+                            Speaker = "Unknown",
                             Text = "It's not just going to be my love and George Michael's, but God's love as well"
                         },
                         new
@@ -2114,7 +2186,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 307,
                             NumberOfWords = 12,
-                            Speaker = "Maeby",
+                            Speaker = "Unknown",
                             Text = "You don't see me nervous about being on my third Virgin Mary"
                         },
                         new
@@ -2268,7 +2340,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 329,
                             NumberOfWords = 7,
-                            Speaker = "GeorgeMichael",
+                            Speaker = "Unknown",
                             Text = "What a fun sexy time for you"
                         },
                         new
@@ -2870,7 +2942,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 415,
                             NumberOfWords = 20,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "I will be head to toe in blue makeup until 8:01 in case the Blue Man Group needs their understudy"
                         },
                         new
@@ -2879,6 +2951,13 @@ namespace ArrestedDevelopmentApi.Migrations
                             NumberOfWords = 4,
                             Speaker = "Unknown",
                             Text = "Are we having yams?"
+                        },
+                        new
+                        {
+                            QuoteId = 417,
+                            NumberOfWords = 8,
+                            Speaker = "Unknown",
+                            Text = "First I blow him, then I poke him"
                         },
                         new
                         {
@@ -2898,56 +2977,56 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 420,
                             NumberOfWords = 14,
-                            Speaker = "Lucille",
+                            Speaker = "Unknown",
                             Text = "No one would believe that a woman like me would have a gay son"
                         },
                         new
                         {
                             QuoteId = 421,
                             NumberOfWords = 8,
-                            Speaker = "GeorgeMichael",
+                            Speaker = "Unknown",
                             Text = "I can see marinating a chicken in that"
                         },
                         new
                         {
                             QuoteId = 422,
                             NumberOfWords = 11,
-                            Speaker = "GeorgeSenior",
+                            Speaker = "Unknown",
                             Text = "Your Tweety Bird dance just cost us a run, you moron"
                         },
                         new
                         {
                             QuoteId = 423,
                             NumberOfWords = 12,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "How do we filter out the teases? We don't let them in."
                         },
                         new
                         {
                             QuoteId = 424,
                             NumberOfWords = 6,
-                            Speaker = "Lucille2",
+                            Speaker = "Unknown",
                             Text = "I am stable as a table"
                         },
                         new
                         {
                             QuoteId = 425,
                             NumberOfWords = 19,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "I would hardly call my mother a girl, but yes, she's still very much a part of my life"
                         },
                         new
                         {
                             QuoteId = 426,
                             NumberOfWords = 5,
-                            Speaker = "Lucille2",
+                            Speaker = "Unknown",
                             Text = "Everybody thinks they're Frank Sinatra"
                         },
                         new
                         {
                             QuoteId = 427,
                             NumberOfWords = 5,
-                            Speaker = "GOB",
+                            Speaker = "Unknown",
                             Text = "They make me feel dressier"
                         },
                         new
@@ -2961,7 +3040,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 429,
                             NumberOfWords = 6,
-                            Speaker = "GeorgeMichael",
+                            Speaker = "Unknown",
                             Text = "Guess she didn't see the drawings"
                         },
                         new
@@ -3073,14 +3152,14 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 445,
                             NumberOfWords = 3,
-                            Speaker = "Oscar",
+                            Speaker = "Unknown",
                             Text = "I need macaroons"
                         },
                         new
                         {
                             QuoteId = 446,
                             NumberOfWords = 14,
-                            Speaker = "Oscar",
+                            Speaker = "Unknown",
                             Text = "You can win every argument like that, but that does not make you right"
                         },
                         new
@@ -3094,36 +3173,43 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 448,
                             NumberOfWords = 6,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "I'm cloaking myself in her scent"
                         },
                         new
                         {
                             QuoteId = 449,
                             NumberOfWords = 13,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "I was made to understand that there would be grilled cheese sandwiches here"
                         },
                         new
                         {
                             QuoteId = 450,
                             NumberOfWords = 12,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "Will someone please have the decency to punch me in the face?"
                         },
                         new
                         {
                             QuoteId = 451,
                             NumberOfWords = 15,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "Mom always taught us to curl up in a ball and remain motionless when confronted"
                         },
                         new
                         {
                             QuoteId = 452,
                             NumberOfWords = 4,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "We have unlimited juice?"
+                        },
+                        new
+                        {
+                            QuoteId = 453,
+                            NumberOfWords = 4,
+                            Speaker = "Unknown",
+                            Text = "You old horny slut"
                         },
                         new
                         {
@@ -3136,7 +3222,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 455,
                             NumberOfWords = 6,
-                            Speaker = "Buster",
+                            Speaker = "Unknown",
                             Text = "No, Mother, I can blow myself"
                         },
                         new
@@ -3157,7 +3243,7 @@ namespace ArrestedDevelopmentApi.Migrations
                         {
                             QuoteId = 458,
                             NumberOfWords = 9,
-                            Speaker = "Tobias",
+                            Speaker = "Unknown",
                             Text = "Oh, I'm sorry, I forgot: your wife is dead"
                         },
                         new
