@@ -40,17 +40,30 @@ namespace ArrestedDevelopmentApi.Controllers
 
     // GET: api/quotes?page=1&pagesize=20
     [HttpGet]
-    public IActionResult GetQuotes(int page = 1, int pageSize = 10)
+    public async Task<IActionResult> GetQuotes( int maxWords, string speaker, bool question = false, int page = 1, int pageSize = 10)
     {
+      IQueryable<Quote> query = _db.Quotes.AsQueryable();
+
+      if (speaker != null)
+      {
+        query = query.Where(entry => entry.Speaker == speaker);
+      }
+      if (question)
+      {  
+        query = query.Where(entry => entry.Text.EndsWith("?"));
+      }
+      if (maxWords != 0)
+      {  
+        query = query.Where(entry => entry.NumberOfWords <= maxWords);
+      }
         // Calculate the number of items to skip based on the page size and requested page.
         int skip = (page - 1) * pageSize;
 
         // Retrieve the data from your data source, applying the pagination parameters.
-        List<Quote> quotes = _db.Quotes
-            .OrderBy(q => q.QuoteId)
+        List<Quote> quotes = await query
             .Skip(skip)
             .Take(pageSize)
-            .ToList();
+            .ToListAsync();
 
         // Determine the total number of items in your data source.
         int totalCount = _db.Quotes.Count();

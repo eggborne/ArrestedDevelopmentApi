@@ -182,7 +182,7 @@ https://localhost:5001/api/quotes?question=true
 
 ## Pagination
 * _Paging refers to getting partial results from an API._ 
-* _Change the pagesize to your desired number in the URL: https://localhost:5001/api/quotes?page=1&pagesize=10_
+* _Change the pagesize to your desired number in the URL: https://localhost:5001/api/Quotes?maxWords=4&speaker=GOB&question=false&page=1&pageSize=4_
 
 ## Known Bugs
 
